@@ -1,0 +1,382 @@
+{
+  "reference_sha256": "0ec61f2f985fef344053e1d8ca7e80743cf9980fb026a8d59063be34dec59e1b",
+  "geometry": {
+    "shape_count": 1154,
+    "max_coordinate_error_pt": 9.094947017729282e-13,
+    "components": [
+      {
+        "component": "Black_border",
+        "shape_count": 1,
+        "max_coordinate_error_pt": 0.0,
+        "bounds_pt": [
+          0.0,
+          0.0,
+          1121.273,
+          680.314
+        ]
+      },
+      {
+        "component": "White_background",
+        "shape_count": 1,
+        "max_coordinate_error_pt": 0.0,
+        "bounds_pt": [
+          56.693,
+          56.693,
+          1064.579,
+          623.622
+        ]
+      },
+      {
+        "component": "_x0022_B_x0022__White_and_Black_Arrows",
+        "shape_count": 16,
+        "max_coordinate_error_pt": 5.684341886080802e-14,
+        "bounds_pt": [
+          28.345,
+          28.346,
+          1092.926,
+          651.968
+        ]
+      },
+      {
+        "component": "B1:_Additional_white_outer_arrows",
+        "shape_count": 8,
+        "max_coordinate_error_pt": 5.684341886080802e-14,
+        "bounds_pt": [
+          28.346,
+          28.347,
+          1092.927,
+          651.968
+        ]
+      },
+      {
+        "component": "Text_at_top",
+        "shape_count": 1,
+        "max_coordinate_error_pt": 0.0,
+        "bounds_pt": [
+          421.636,
+          0.0,
+          699.637,
+          17.008
+        ]
+      },
+      {
+        "component": "C:_Center_zone_plate",
+        "shape_count": 25,
+        "max_coordinate_error_pt": 2.2737367544323206e-13,
+        "bounds_pt": [
+          532.29,
+          311.811,
+          588.983,
+          368.50399999999996
+        ]
+      },
+      {
+        "component": "D:_Aspect_Ratio_Arrow_Tips",
+        "shape_count": 24,
+        "max_coordinate_error_pt": 0.0,
+        "bounds_pt": [
+          129.76999999999998,
+          56.693,
+          991.501,
+          623.6220000000001
+        ]
+      },
+      {
+        "component": "T1_x002F_T2:__H-shaped_bars",
+        "shape_count": 2,
+        "max_coordinate_error_pt": 1.1368683772161603e-13,
+        "bounds_pt": [
+          73.077,
+          283.465,
+          1048.196,
+          396.852
+        ]
+      },
+      {
+        "component": "R1_x002F_R2:__x0022_Auto-registration_marks_x0022_",
+        "shape_count": 4,
+        "max_coordinate_error_pt": 1.1368683772161603e-13,
+        "bounds_pt": [
+          305.518,
+          113.38499999999999,
+          815.755,
+          572.597
+        ]
+      },
+      {
+        "component": "L1-L4:filled_black_bars",
+        "shape_count": 27,
+        "max_coordinate_error_pt": 1.1368683772161603e-13,
+        "bounds_pt": [
+          70.243,
+          96.37799999999999,
+          1051.03,
+          583.938
+        ]
+      },
+      {
+        "component": "G1_x002F_G2:_10_line_impulses",
+        "shape_count": 20,
+        "max_coordinate_error_pt": 2.842170943040401e-14,
+        "bounds_pt": [
+          421.738,
+          73.701,
+          849.77,
+          479.054
+        ]
+      },
+      {
+        "component": "N:_Checkerboard_patterns",
+        "shape_count": 73,
+        "max_coordinate_error_pt": 1.1368683772161603e-13,
+        "bounds_pt": [
+          489.77000000000004,
+          589.606,
+          631.504,
+          617.956
+        ]
+      },
+      {
+        "component": "E:_Long_vert._and_ho._lines",
+        "shape_count": 2,
+        "max_coordinate_error_pt": 0.0,
+        "bounds_pt": [
+          271.503,
+          90.708,
+          841.266,
+          566.928
+        ]
+      },
+      {
+        "component": "M:_Circle_with_X_and_cross",
+        "shape_count": 5,
+        "max_coordinate_error_pt": 5.684341886080802e-14,
+        "bounds_pt": [
+          338.116,
+          216.84999999999997,
+          414.65200000000016,
+          293.38599999999997
+        ]
+      },
+      {
+        "component": "J1_x002F_J2:_Low_frequency_5_black_line_Large_Center_Resolution_Wedge",
+        "shape_count": 12,
+        "max_coordinate_error_pt": 3.410605131648481e-13,
+        "bounds_pt": [
+          362.2099999999999,
+          141.732,
+          532.2910000000003,
+          388.346
+        ]
+      },
+      {
+        "component": "JS1_x002F_JS2:_Low_Frequency_5_line_Small_Corner_Resolution_Wedge",
+        "shape_count": 54,
+        "max_coordinate_error_pt": 9.094947017729282e-13,
+        "bounds_pt": [
+          73.077,
+          107.71599999999991,
+          1048.195,
+          572.5979999999998
+        ]
+      },
+      {
+        "component": "KS1_x002F_KS2_x002F_KD_9_line_High_Resolution_Wedges",
+        "shape_count": 101,
+        "max_coordinate_error_pt": 7.958078640513122e-13,
+        "bounds_pt": [
+          138.268,
+          136.063,
+          982.9970000000001,
+          491.53000000000003
+        ]
+      },
+      {
+        "component": "_x0022_F_x0022__Small_Corner_Squares",
+        "shape_count": 8,
+        "max_coordinate_error_pt": 5.684341886080802e-14,
+        "bounds_pt": [
+          158.116,
+          192.756,
+          963.156,
+          487.558
+        ]
+      },
+      {
+        "component": "O1_x002F_O2_Tilted_Square_Wave_Patches",
+        "shape_count": 384,
+        "max_coordinate_error_pt": 1.1368683772161603e-13,
+        "bounds_pt": [
+          365.045,
+          144.567,
+          815.754,
+          535.748
+        ]
+      },
+      {
+        "component": "P1_x002F_P2_Square_Wave_Sweep",
+        "shape_count": 386,
+        "max_coordinate_error_pt": 1.1368683772161603e-13,
+        "bounds_pt": [
+          299.848,
+          141.732,
+          759.061,
+          558.4250000000001
+        ]
+      }
+    ]
+  },
+  "raster": [
+    {
+      "width": 2048,
+      "height": 1243,
+      "mean_abs_error_8bit": 0.0009020567259989274,
+      "max_abs_error_8bit": 8,
+      "changed_pixels": 974,
+      "compared_pixels": 2545664
+    },
+    {
+      "width": 8192,
+      "height": 4970,
+      "mean_abs_error_8bit": 0.0007962324729627767,
+      "max_abs_error_8bit": 9,
+      "changed_pixels": 12475,
+      "compared_pixels": 40714240
+    }
+  ],
+  "labels": {
+    "count": 159,
+    "policy": "Measured content, baseline and size; Liberation Sans outlines. Glyph shapes differ and are excluded from geometry raster comparison."
+  },
+  "pdf_crosscheck": {
+    "status": "measured",
+    "sha256": "a1fd4cc763150eca220736cf8eaae47edaf08ff895e4674e2890b866c2027ffe",
+    "pdf_translation_pt": [
+      6.292970180511475,
+      6.913569927215576
+    ],
+    "note": "Vertex/control-point comparison, not a compliance or contour-distance test. SVG is authoritative when source editions differ; PDF uses CMYK colors.",
+    "components": [
+      {
+        "component": "Black_border",
+        "svg_shape_count": 1,
+        "pdf_shape_count": 1,
+        "max_bidirectional_vertex_distance_pt": 0.0004371604162843868
+      },
+      {
+        "component": "White_background",
+        "svg_shape_count": 1,
+        "pdf_shape_count": 1,
+        "max_bidirectional_vertex_distance_pt": 0.0004337240021518459
+      },
+      {
+        "component": "_x0022_B_x0022__White_and_Black_Arrows",
+        "svg_shape_count": 16,
+        "pdf_shape_count": 16,
+        "max_bidirectional_vertex_distance_pt": 0.0007841667095651468
+      },
+      {
+        "component": "B1:_Additional_white_outer_arrows",
+        "svg_shape_count": 8,
+        "pdf_shape_count": 8,
+        "max_bidirectional_vertex_distance_pt": 0.0007334261566582546
+      },
+      {
+        "component": "Text_at_top",
+        "svg_shape_count": 1,
+        "pdf_shape_count": 1,
+        "max_bidirectional_vertex_distance_pt": 0.00033479903769874977
+      },
+      {
+        "component": "C:_Center_zone_plate",
+        "svg_shape_count": 25,
+        "pdf_shape_count": 25,
+        "max_bidirectional_vertex_distance_pt": 0.0023930713667870904
+      },
+      {
+        "component": "D:_Aspect_Ratio_Arrow_Tips",
+        "svg_shape_count": 24,
+        "pdf_shape_count": 24,
+        "max_bidirectional_vertex_distance_pt": 0.000771612994801432
+      },
+      {
+        "component": "T1_x002F_T2:__H-shaped_bars",
+        "svg_shape_count": 2,
+        "pdf_shape_count": 2,
+        "max_bidirectional_vertex_distance_pt": 0.001491747583049796
+      },
+      {
+        "component": "R1_x002F_R2:__x0022_Auto-registration_marks_x0022_",
+        "svg_shape_count": 4,
+        "pdf_shape_count": 4,
+        "max_bidirectional_vertex_distance_pt": 0.0007732474478090381
+      },
+      {
+        "component": "L1-L4:filled_black_bars",
+        "svg_shape_count": 27,
+        "pdf_shape_count": 27,
+        "max_bidirectional_vertex_distance_pt": 0.0009677250522415372
+      },
+      {
+        "component": "G1_x002F_G2:_10_line_impulses",
+        "svg_shape_count": 20,
+        "pdf_shape_count": 20,
+        "max_bidirectional_vertex_distance_pt": 0.001022421515107656
+      },
+      {
+        "component": "N:_Checkerboard_patterns",
+        "svg_shape_count": 73,
+        "pdf_shape_count": 73,
+        "max_bidirectional_vertex_distance_pt": 0.0016119458084961503
+      },
+      {
+        "component": "E:_Long_vert._and_ho._lines",
+        "svg_shape_count": 2,
+        "pdf_shape_count": 2,
+        "max_bidirectional_vertex_distance_pt": 0.0006261672003630265
+      },
+      {
+        "component": "M:_Circle_with_X_and_cross",
+        "svg_shape_count": 5,
+        "pdf_shape_count": 5,
+        "max_bidirectional_vertex_distance_pt": 0.000986994175042482
+      },
+      {
+        "component": "J1_x002F_J2:_Low_frequency_5_black_line_Large_Center_Resolution_Wedge",
+        "svg_shape_count": 12,
+        "pdf_shape_count": 12,
+        "max_bidirectional_vertex_distance_pt": 0.002694102447663003
+      },
+      {
+        "component": "JS1_x002F_JS2:_Low_Frequency_5_line_Small_Corner_Resolution_Wedge",
+        "svg_shape_count": 54,
+        "pdf_shape_count": 54,
+        "max_bidirectional_vertex_distance_pt": 0.0053176251698419325
+      },
+      {
+        "component": "KS1_x002F_KS2_x002F_KD_9_line_High_Resolution_Wedges",
+        "svg_shape_count": 101,
+        "pdf_shape_count": 101,
+        "max_bidirectional_vertex_distance_pt": 0.00604144686767638
+      },
+      {
+        "component": "_x0022_F_x0022__Small_Corner_Squares",
+        "svg_shape_count": 8,
+        "pdf_shape_count": 8,
+        "max_bidirectional_vertex_distance_pt": 0.0005189599832486402
+      },
+      {
+        "component": "O1_x002F_O2_Tilted_Square_Wave_Patches",
+        "svg_shape_count": 384,
+        "pdf_shape_count": 384,
+        "max_bidirectional_vertex_distance_pt": 0.001407312539040293
+      },
+      {
+        "component": "P1_x002F_P2_Square_Wave_Sweep",
+        "svg_shape_count": 386,
+        "pdf_shape_count": 386,
+        "max_bidirectional_vertex_distance_pt": 0.0008009844572180611
+      }
+    ]
+  }
+}

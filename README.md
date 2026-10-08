@@ -7,12 +7,23 @@ test target or an independently verified implementation of the ISO standard.
 
 ![Measured reconstruction](preview.png)
 
+## Ready-made outputs
+
+- [Vector SVG](charts/iso12233.svg)
+- [8192 x 4970 PNG](charts/iso12233-8192.png)
+- [Machine-readable validation report](validation/report.json)
+
+Use these as synthetic chart inputs for optical/sensor simulation. They are
+chart artwork, not captured camera images, RAW data, or an ISP scoring protocol.
+
 ## Generate
 
 Python 3.10 or later is required. No original PDF/SVG, system fonts, Cairo,
 Octave, ISETCam, or network connection is needed after installation.
 
 ```bash
+git clone https://github.com/hujunhan/ISO12233.git
+cd ISO12233
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -45,6 +56,19 @@ rectangle primitive's `width` modifies every instance sharing that primitive.
 To change one instance only, duplicate its primitive and update its index.
 All repeated contours share the same renderer. Component IDs preserve the
 source names for wedges, sweeps, bars, checkerboard, arrows and zone plate.
+
+### Wedges and sweeps
+
+The continuous square-wave sweeps use **384 straight strokes** (192 in each
+direction), plus two compound tick-mark paths. Stroke positions and widths
+are measured individually. No spline is used for these sweeps.
+
+Resolution wedges use closed polygon outlines: 52-53 vertices per low-frequency
+stripe, and 22 or 62-63 per high-frequency stripe. These counts include both
+sides of each stripe. Across the wedge groups there are 136 stripes and 5,391
+outline vertices, excluding labels and tick marks. Their smooth appearance
+comes from dense line segments and raster antialiasing; the generator does
+not fit new splines. The center zone plate also uses measured cubic curves.
 
 This first version deliberately preserves measured contour samples and the
 source's small asymmetries. **It does not replace every wedge/sweep with an
@@ -82,7 +106,8 @@ side-by-side crops are also produced. See [VALIDATION.md](VALIDATION.md).
   University Program of Computer Graphics, copyright 2004. See
   [author's page](https://www.graphics.cornell.edu/~westin/misc/res-chart.html).
   No blanket open-source license for this artwork has been established.
-  Reconstructing it does not make it CC0. This repository is currently local.
+  Reconstructing it does not make it CC0; the MIT license below grants no
+  additional rights to the chart artwork or derived measurement data.
 - Python source files: MIT, see LICENSE. This grant does **not** cover the
   measured artwork, generated chart images, or the original reference files.
 - Liberation Sans Regular 2.1.5: SIL Open Font License 1.1; copyright and

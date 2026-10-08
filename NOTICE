@@ -1,0 +1,13 @@
+Chart source: Stephen H. Westin, Cornell University Program of Computer Graphics.
+Copyright (c) 2004 Cornell University Program of Computer Graphics.
+https://www.graphics.cornell.edu/~westin/misc/res-chart.html
+
+This project reconstructs the measured geometry of Westin's artwork.
+Changes: Python/drawsvg generation; component-level primitive/placement data;
+Liberation Sans outline labels; cropped outer-frame canvas; printing footer
+removed. This is not a certified ISO12233 implementation. The original artwork
+and derived chart data/images are not covered by the MIT license for our Python
+source code and are not declared public domain.
+
+Liberation Sans Regular 2.1.5 is bundled under the SIL Open Font License 1.1.
+See fonts/LICENSE and fonts/AUTHORS for the original notices.

@@ -1,0 +1,555 @@
+{
+  "standard_certification": false,
+  "purpose": "Numerical sampling checks and approximate public-preview geometry comparison",
+  "error_units": "absolute linear reflectance (0 to 1)",
+  "convergence_note": "16x16 samples are a numerical reference, not exact area integration. Comparisons use width 512; values do not bound all 8192-pixel errors.",
+  "charts": {
+    "cipa": {
+      "tile_invariant": true,
+      "sampling_width": 512,
+      "convergence": {
+        "4": {
+          "max_absolute_error": 0.4425000548362732,
+          "mean_absolute_error": 0.007983776740729809,
+          "p99_absolute_error": 0.14750002324581146
+        },
+        "8": {
+          "max_absolute_error": 0.19666671752929688,
+          "mean_absolute_error": 0.0034755051601678133,
+          "p99_absolute_error": 0.09833329916000366
+        }
+      },
+      "production_sampling_probes": {
+        "width": 8192,
+        "height": 5783,
+        "labels_included": false,
+        "note": "Selected measurement ROIs only, not a global error bound; 16x16 reference remains approximate.",
+        "regions": [
+          {
+            "pixel_origin": [
+              1510,
+              1860
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 0.09833341836929321,
+                "mean": 0.005730257369577885
+              },
+              "8": {
+                "maximum": 0.049166709184646606,
+                "mean": 0.002694828435778618
+              }
+            }
+          },
+          {
+            "pixel_origin": [
+              2197,
+              932
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 0.09833341836929321,
+                "mean": 0.005784274078905582
+              },
+              "8": {
+                "maximum": 0.049166738986968994,
+                "mean": 0.0025582886300981045
+              }
+            }
+          },
+          {
+            "pixel_origin": [
+              6618,
+              1860
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 0.09833341836929321,
+                "mean": 0.005730257369577885
+              },
+              "8": {
+                "maximum": 0.049166709184646606,
+                "mean": 0.002694828435778618
+              }
+            }
+          },
+          {
+            "pixel_origin": [
+              5931,
+              932
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 0.09833341836929321,
+                "mean": 0.005784274078905582
+              },
+              "8": {
+                "maximum": 0.049166738986968994,
+                "mean": 0.002558288397267461
+              }
+            }
+          },
+          {
+            "pixel_origin": [
+              2770,
+              2695
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 0.07375004887580872,
+                "mean": 0.0070761507377028465
+              },
+              "8": {
+                "maximum": 0.024583369493484497,
+                "mean": 0.003766145557165146
+              }
+            }
+          },
+          {
+            "pixel_origin": [
+              2717,
+              2475
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 0.07375004887580872,
+                "mean": 0.014775686897337437
+              },
+              "8": {
+                "maximum": 0.024583369493484497,
+                "mean": 0.007627543993294239
+              }
+            }
+          },
+          {
+            "pixel_origin": [
+              3851,
+              4130
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 0.07375004887580872,
+                "mean": 0.006518729031085968
+              },
+              "8": {
+                "maximum": 0.024583369493484497,
+                "mean": 0.0037728939205408096
+              }
+            }
+          },
+          {
+            "pixel_origin": [
+              3631,
+              4182
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 0.07375004887580872,
+                "mean": 0.01665274053812027
+              },
+              "8": {
+                "maximum": 0.024583369493484497,
+                "mean": 0.007626039441674948
+              }
+            }
+          }
+        ]
+      },
+      "production": {
+        "shape": [
+          5783,
+          8192
+        ],
+        "dtype": "float32",
+        "minimum": 0.013333332724869251,
+        "maximum": 0.800000011920929,
+        "generator_hashes_match": true,
+        "sha256": {
+          "chart.svg": "cce0c7ddb77a60c6d0ad0f0faa595a27af61caccf7a1501ca9d1d038fb047a56",
+          "preview-8192.png": "96ee8bd1ca11fc321d65e8d523110ab58a503b4d90cb3ab34a0b237b577e0ea0",
+          "metadata.json": "eeb4a04b61d978fbe123eff4b557dd19032f7a256b9021ed881f4b8cb67b4d2d"
+        },
+        "linear_npy_sha256": "bd635b0ed28cdf1af2d2b680b66009caec9fb824f9fea97e20dfb92e7668b2e4",
+        "wall_seconds": 29.03,
+        "maximum_resident_bytes": 878411776,
+        "peak_memory_footprint_bytes": 198722448
+      }
+    },
+    "esfr2024": {
+      "tile_invariant": true,
+      "sampling_width": 512,
+      "convergence": {
+        "4": {
+          "max_absolute_error": 0.20585933327674866,
+          "mean_absolute_error": 0.000509417150169611,
+          "p99_absolute_error": 0.018749982118606567
+        },
+        "8": {
+          "max_absolute_error": 0.09960928559303284,
+          "mean_absolute_error": 0.00019508608966134489,
+          "p99_absolute_error": 0.006640642881393433
+        }
+      },
+      "production_sampling_probes": {
+        "width": 8192,
+        "height": 5783,
+        "labels_included": false,
+        "note": "Selected measurement ROIs only, not a global error bound; 16x16 reference remains approximate.",
+        "regions": [
+          {
+            "pixel_origin": [
+              4064,
+              2619
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 0.01406252384185791,
+                "mean": 9.844473970588297e-05
+              },
+              "8": {
+                "maximum": 0.0035156607627868652,
+                "mean": 2.8336960895103402e-05
+              }
+            }
+          },
+          {
+            "pixel_origin": [
+              4425,
+              2378
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 7.450580596923828e-09,
+                "mean": 7.450580596923828e-09
+              },
+              "8": {
+                "maximum": 3.725290298461914e-09,
+                "mean": 3.725290298461914e-09
+              }
+            }
+          },
+          {
+            "pixel_origin": [
+              4064,
+              1052
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 0.014062494039535522,
+                "mean": 0.0003550690016709268
+              },
+              "8": {
+                "maximum": 0.006445296108722687,
+                "mean": 9.899957512971014e-05
+              }
+            }
+          },
+          {
+            "pixel_origin": [
+              1896,
+              1293
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 0.009374991059303284,
+                "mean": 5.924766810494475e-05
+              },
+              "8": {
+                "maximum": 0.0023437589406967163,
+                "mean": 1.4317404747998808e-05
+              }
+            }
+          }
+        ]
+      },
+      "production": {
+        "shape": [
+          5783,
+          8192
+        ],
+        "dtype": "float32",
+        "minimum": 0.004999999888241291,
+        "maximum": 0.8999999761581421,
+        "generator_hashes_match": true,
+        "sha256": {
+          "chart.svg": "43b90841d5a7b07b1187d0ce7e16bddc7ea220f6d725f13a4ae84421f5604b0b",
+          "preview-8192.png": "cf9b8a61d1a6c85b2500935533f6f6ca721e46cfba7a5649b4fa4285d93e0543",
+          "metadata.json": "72209361c0aa1f3d4b2652af49ca1557b0f3da3adcdcc623180d856c4698ea17"
+        },
+        "linear_npy_sha256": "4b7f6fc2f5acbc1d9a0c77b1ad0f25e42c578a23624ee4f80e42e3fc373f82f8",
+        "wall_seconds": 4.47,
+        "maximum_resident_bytes": 604241920,
+        "peak_memory_footprint_bytes": 193840040
+      }
+    },
+    "ssfr": {
+      "tile_invariant": true,
+      "sampling_width": 512,
+      "convergence": {
+        "4": {
+          "max_absolute_error": 0.2519632875919342,
+          "mean_absolute_error": 0.003264168743044138,
+          "p99_absolute_error": 0.03386238217353821
+        },
+        "8": {
+          "max_absolute_error": 0.08005079627037048,
+          "mean_absolute_error": 0.0007710023783147335,
+          "p99_absolute_error": 0.008453011512756348
+        }
+      },
+      "production_sampling_probes": {
+        "width": 8192,
+        "height": 6201,
+        "labels_included": false,
+        "note": "Selected measurement ROIs only, not a global error bound; 16x16 reference remains approximate.",
+        "regions": [
+          {
+            "pixel_origin": [
+              1174,
+              1002
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 0.05522841215133667,
+                "mean": 0.0008192638633772731
+              },
+              "8": {
+                "maximum": 0.029515214264392853,
+                "mean": 0.00020012239110656083
+              }
+            }
+          },
+          {
+            "pixel_origin": [
+              1346,
+              1002
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 0.00039780139923095703,
+                "mean": 0.00019966959371231496
+              },
+              "8": {
+                "maximum": 7.94529914855957e-05,
+                "mean": 3.991698758909479e-05
+              }
+            }
+          },
+          {
+            "pixel_origin": [
+              1729,
+              1002
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 5.8650970458984375e-05,
+                "mean": 3.5308657970745116e-05
+              },
+              "8": {
+                "maximum": 1.1801719665527344e-05,
+                "mean": 7.060743882902898e-06
+              }
+            }
+          },
+          {
+            "pixel_origin": [
+              4160,
+              3068
+            ],
+            "size": [
+              64,
+              64
+            ],
+            "errors_vs_16": {
+              "4": {
+                "maximum": 0.0597342848777771,
+                "mean": 0.0008222793694585562
+              },
+              "8": {
+                "maximum": 0.0412328839302063,
+                "mean": 0.00020448770374059677
+              }
+            }
+          }
+        ]
+      },
+      "production": {
+        "shape": [
+          6201,
+          8192
+        ],
+        "dtype": "float32",
+        "minimum": 0.008999999612569809,
+        "maximum": 0.8999999761581421,
+        "generator_hashes_match": true,
+        "sha256": {
+          "chart.svg": "0f8ee18067a39bfdf288d27d5e58cbbce20bc069656cd1a091ed9266227952e3",
+          "preview-8192.png": "3142729ba6c7e4b506d78e44633bfd42175ab9699403939ea1398624f140042b",
+          "metadata.json": "b6345fc97d29c3eeee8bf73344359d229374687e68f99a293bc67e437a1d26b5"
+        },
+        "linear_npy_sha256": "4d90446bc70a6661217eb63de9e62f2f9d159c2882f02265b94b68a660dc19b5",
+        "wall_seconds": 16.36,
+        "maximum_resident_bytes": 601096192,
+        "peak_memory_footprint_bytes": 98895024
+      }
+    }
+  },
+  "esfr_public_preview_anchors": {
+    "source": "references/esfr-2023-draft-public.png",
+    "active_bounds_px": [
+      29,
+      28,
+      623,
+      425
+    ],
+    "measured_centers_mm": [
+      [
+        169.4949494949495,
+        119.74811083123426
+      ],
+      [
+        86.66666666666667,
+        119.24433249370277
+      ],
+      [
+        251.31313131313132,
+        119.24433249370277
+      ],
+      [
+        169.4949494949495,
+        46.19647355163728
+      ],
+      [
+        169.4949494949495,
+        192.79596977329976
+      ],
+      [
+        76.06060606060606,
+        49.2191435768262
+      ],
+      [
+        261.9191919191919,
+        49.2191435768262
+      ],
+      [
+        76.06060606060606,
+        189.77329974811084
+      ],
+      [
+        261.9191919191919,
+        189.77329974811084
+      ]
+    ],
+    "generated_centers_mm": [
+      [
+        170.0,
+        120.0
+      ],
+      [
+        86.6666666667,
+        120.0
+      ],
+      [
+        253.3333333333,
+        120.0
+      ],
+      [
+        170.0,
+        45.0
+      ],
+      [
+        170.0,
+        195.0
+      ],
+      [
+        76.6666666667,
+        50.0
+      ],
+      [
+        263.3333333333,
+        50.0
+      ],
+      [
+        76.6666666667,
+        190.0
+      ],
+      [
+        263.3333333333,
+        190.0
+      ]
+    ],
+    "offset_distances_mm": [
+      0.5643794521359304,
+      0.7556675062972289,
+      2.156907411635255,
+      1.2987012637320752,
+      2.2611557338803685,
+      0.9884564795026282,
+      1.6154048076898262,
+      0.6470722235311548,
+      1.4321972431555046
+    ],
+    "maximum_mm": 2.2611557338803685,
+    "caveat": "Manual low-resolution preview measurements. Draft figure, approximate crop and pixel placement; not a standard tolerance test."
+  }
+}

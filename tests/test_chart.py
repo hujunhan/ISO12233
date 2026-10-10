@@ -6,15 +6,15 @@ import unittest
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
-from generate_chart import ROOT, build_chart, render_svg
-from measure_chart import NS, measure
-from validate_chart import geometry_report
+from iso12233.generate_chart import ROOT, build_chart, render_svg
+from iso12233.measure_chart import NS, measure
+from iso12233.validate_chart import geometry_report
 
 
 class ChartTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.model = json.loads((ROOT/"chart_measurements.json").read_text())
+        cls.model = json.loads((ROOT/"data/iso2000_measurements.json").read_text())
 
     def test_portable_generation_and_open_font_outlines(self):
         first = build_chart(self.model).as_svg()

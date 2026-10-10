@@ -1,0 +1,455 @@
+{
+  "cipa": {
+    "status": "available_public_reconstruction",
+    "target_standard": "ISO 12233:2024",
+    "standard_certification": false,
+    "geometry_verified_against_full_2024_standard": false,
+    "coordinate_unit": "mm",
+    "reconstruction": "public-reference reconstruction; measured layout and explicitly selected parameters",
+    "parameters": {
+      "black": 0.013333333333333334,
+      "white": 0.8,
+      "main_length_mm": 96.55,
+      "peripheral_length_mm": 37.711,
+      "main_wedges": [
+        [
+          200,
+          24,
+          90
+        ],
+        [
+          267,
+          150,
+          180
+        ],
+        [
+          78,
+          167,
+          -45
+        ],
+        [
+          215,
+          211,
+          -135
+        ]
+      ],
+      "peripheral_wedges": [
+        [
+          64,
+          54,
+          90
+        ],
+        [
+          68,
+          40,
+          0
+        ],
+        [
+          276,
+          54,
+          90
+        ],
+        [
+          272,
+          40,
+          180
+        ],
+        [
+          64,
+          186,
+          -90
+        ],
+        [
+          68,
+          200,
+          0
+        ],
+        [
+          276,
+          186,
+          -90
+        ],
+        [
+          272,
+          200,
+          180
+        ]
+      ],
+      "reference_circle_radii_mm": [
+        125,
+        133.3333,
+        141.6667,
+        150,
+        158.3333,
+        166.6667
+      ],
+      "squares": [
+        [
+          43,
+          47,
+          5
+        ],
+        [
+          78,
+          55,
+          5
+        ],
+        [
+          297,
+          47,
+          5
+        ],
+        [
+          262,
+          55,
+          5
+        ],
+        [
+          43,
+          193,
+          5
+        ],
+        [
+          78,
+          185,
+          5
+        ],
+        [
+          297,
+          193,
+          5
+        ],
+        [
+          262,
+          185,
+          5
+        ],
+        [
+          170,
+          99,
+          50
+        ],
+        [
+          184,
+          134,
+          5
+        ]
+      ],
+      "sweeps": [
+        [
+          [
+            79,
+            74.5
+          ],
+          0,
+          91,
+          200,
+          1500
+        ],
+        [
+          [
+            93,
+            66.5
+          ],
+          0,
+          77,
+          1400,
+          2500
+        ],
+        [
+          [
+            211,
+            30
+          ],
+          90,
+          91,
+          200,
+          1500
+        ],
+        [
+          [
+            219,
+            44
+          ],
+          90,
+          77,
+          1400,
+          2500
+        ],
+        [
+          [
+            74.46446609406726,
+            154.97918471982868
+          ],
+          -45,
+          91,
+          200,
+          1500
+        ],
+        [
+          [
+            78.70710678118655,
+            139.42283553372465
+          ],
+          -45,
+          77,
+          1400,
+          2500
+        ],
+        [
+          [
+            202.97918471982868,
+            214.53553390593274
+          ],
+          -135,
+          91,
+          200,
+          1500
+        ],
+        [
+          [
+            187.42283553372465,
+            210.29289321881345
+          ],
+          -135,
+          77,
+          1400,
+          2500
+        ]
+      ]
+    },
+    "provenance": {
+      "documented": {
+        "active_area": "300x200 mm, official CIPA instructions; 340x240 cropped frame excludes A3 paper margin/footer",
+        "frequency": "200-2500 LW/PH, five black lines; P1 200-1500, P2 1400-2500, official CIPA descriptions",
+        "lengths": "96.55 mm main wedge, 37.711 mm peripheral wedge, approximately 7 mm per 100 LW/PH for sweeps, visible old dimensional drawings A.4/A.5"
+      },
+      "measured_or_inferred": {
+        "layout": "manual measurements from original 3307x2340 illustration in CIPA instructions; main wedge origins/angles, squares and sweep placement",
+        "reference_circles": "radii read from old dimensional drawing A.3"
+      },
+      "selected": {
+        "wedge_formula": "linear local frequency versus axial distance; stripe boundaries u=(k +/- 0.5)*H/f(s), k=-4,-2,0,2,4. Ideal formula rather than tracing aliased preview contours",
+        "sweep_formula": "integrated local frequency, phase=f0*s/(2H)+(f1-f0)*s^2/(4HL)",
+        "reflectance": "0.8 / (0.8/60), synthetic 60:1 endpoints",
+        "quiet_zones": "white margins around patterns prevent reference-circle interference; dimensions selected",
+        "labels_focus": "font, text placement and six-cycle focus wheel reconstructed; no certified positional tolerance"
+      }
+    }
+  },
+  "esfr2024": {
+    "status": "available_public_reconstruction",
+    "target_standard": "ISO 12233:2024",
+    "standard_certification": false,
+    "geometry_verified_against_full_2024_standard": false,
+    "coordinate_unit": "mm",
+    "reconstruction": "public-reference reconstruction; measured layout and explicitly selected parameters",
+    "parameters": {
+      "border": 0.005,
+      "white": 0.9,
+      "background": 0.2,
+      "dark": 0.05,
+      "star_side_mm": 50,
+      "edge_start_deg": 5,
+      "star_centers": [
+        [
+          170,
+          120
+        ],
+        [
+          86.6666666667,
+          120
+        ],
+        [
+          253.3333333333,
+          120
+        ],
+        [
+          170,
+          45
+        ],
+        [
+          170,
+          195
+        ],
+        [
+          76.6666666667,
+          50
+        ],
+        [
+          263.3333333333,
+          50
+        ],
+        [
+          76.6666666667,
+          190
+        ],
+        [
+          263.3333333333,
+          190
+        ]
+      ],
+      "patch_size_mm": 12.5,
+      "oecf_endpoints": [
+        0.045,
+        0.9
+      ],
+      "registration_centers": [
+        [
+          120,
+          65
+        ],
+        [
+          120,
+          175
+        ],
+        [
+          220,
+          175
+        ]
+      ],
+      "registration_radius_mm": 5.5,
+      "focus_radius_mm": 5
+    },
+    "provenance": {
+      "documented": {
+        "canvas_active_mm": "340x240 / 300x200, QA100 public specification page 2",
+        "edge_reflectance": "0.20/0.05 and four-cycle 5-degree structure from indexed 2024 table C.1; 4:1 independently corroborated by IS&T and QA100",
+        "star_side_mm": "25% of active height in indexed table C.1"
+      },
+      "measured_or_inferred": {
+        "star_centers": "2022 authors paper Figure 13; inferred 4:3 diagonal-normalized field positions reproduce preview centres",
+        "oecf_positions": "staggered 16-patch arrangement and numbering measured from Figure 13 and QA100 preview",
+        "registration": "three asymmetric circles measured from Figure 13"
+      },
+      "selected": {
+        "oecf_endpoints": "synthetic 20:1 range, QA100 product contrast; 16 log-spaced values are our choice, not claimed ISO14524 sequence",
+        "border_white": "0.005 and 0.9 synthetic reflectance endpoints",
+        "focus": "dual-density quadratic zone plate formula and 5 mm radius selected to resemble preview; not measured focus transfer"
+      }
+    }
+  },
+  "ssfr": {
+    "status": "available_public_reconstruction",
+    "target_standard": "ISO 12233:2024",
+    "standard_certification": false,
+    "geometry_verified_against_full_2024_standard": false,
+    "coordinate_unit": "mm",
+    "reconstruction": "public-reference reconstruction; measured layout and explicitly selected parameters",
+    "parameters": {
+      "cell_size_mm": [
+        290,
+        270
+      ],
+      "radius_mm": 125,
+      "background": 0.18,
+      "gap_background": 0.08,
+      "column_gap_mm": 100,
+      "white": 0.9,
+      "black": 0.009,
+      "inner_radius_fraction": 0.1,
+      "phase_rad": 0,
+      "patch_positions_mm": [
+        [
+          260,
+          50
+        ],
+        [
+          260,
+          30
+        ],
+        [
+          230,
+          0
+        ],
+        [
+          210,
+          0
+        ],
+        [
+          60,
+          0
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          10,
+          30
+        ],
+        [
+          10,
+          50
+        ],
+        [
+          10,
+          200
+        ],
+        [
+          10,
+          220
+        ],
+        [
+          40,
+          250
+        ],
+        [
+          60,
+          250
+        ],
+        [
+          210,
+          250
+        ],
+        [
+          230,
+          250
+        ],
+        [
+          260,
+          220
+        ],
+        [
+          260,
+          200
+        ]
+      ],
+      "marker_holes_mm": [
+        [
+          16,
+          6
+        ],
+        [
+          266,
+          6
+        ],
+        [
+          16,
+          256
+        ],
+        [
+          266,
+          256
+        ]
+      ]
+    },
+    "provenance": {
+      "documented": {
+        "cell_star_markers_patches": "publicly accessible 2014 reference, Annex E table E.2: 290x270 mm, star diameter 250 mm, marker/patch coordinates",
+        "modulation": "144 cycles; 72-cycle alternative and 18% background, old Annex E and indexed 2024 E.1; primary vendor data independently corroborate cycle counts",
+        "patch_levels": "equally spaced in linear reflectance, 16 steps from bright to dark"
+      },
+      "measured_or_inferred": {
+        "grid": "3x3 arrangement from authors paper and old Figure E.1; 100 mm horizontal gaps estimated from relative star-centre spacing",
+        "centre_mask": "radius 1/10 of outer star radius estimated from authors Figure 8",
+        "top_right_marker": "white-hole y=6 mm follows visible symmetry in Figure 8; old E.2 lists y=0, so this is a recorded override"
+      },
+      "selected": {
+        "reflectance": "0.9 / 0.009 (100:1), synthetic endpoints, within publicly documented high-contrast range; not measured material values",
+        "gap_background": "0.08 synthetic dark gap",
+        "phase": "0 radians selected convention"
+      }
+    }
+  }
+}

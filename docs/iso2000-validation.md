@@ -64,6 +64,6 @@ rejection of a deliberately changed bar width; and reproducible measurements.
 Local untracked outputs include the SVG, 8192 x 4970 PNG, JSON report,
 geometry previews, overlay, amplified difference images and detail comparison
 sheet in `output/`. Published example SVG/PNG files are in `charts/`, with a
-copy of the machine-readable report in `validation/report.json`. The small
-`preview.png` is tracked. Original reference SVG/PDF files remain untracked.
+copy of the machine-readable report in `reports/iso2000/geometry.json`. The small
+`charts/iso2000/thumbnail.png` is tracked. Original reference SVG/PDF files remain untracked.
 No existing simulation files or RAW dataset were changed.

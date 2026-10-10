@@ -1,0 +1,49 @@
+{
+  "scope": "Historical legacy neutral vector sampling analysis; modern analytic charts have a separate report.",
+  "tile_comparison": {
+    "fixture": "analytically half-black trapezoid, 320x195",
+    "tile_rows": [
+      7,
+      1000
+    ],
+    "supersample": 4,
+    "max_absolute_error": 0.013235300779342651,
+    "mean_absolute_error": 1.5550376701867208e-05,
+    "changed_pixels": 253,
+    "exactly_tile_invariant": false,
+    "cause": "MuPDF polygon antialias rasterization depends on clipping bounds; halo does not eliminate it"
+  },
+  "sampling_convergence": [
+    {
+      "width": 512,
+      "supersamples": [
+        2,
+        4
+      ],
+      "max_absolute_error": 0.12745097279548645,
+      "mean_absolute_error": 0.0017978947144001722
+    },
+    {
+      "width": 512,
+      "supersamples": [
+        4,
+        8
+      ],
+      "max_absolute_error": 0.058210790157318115,
+      "mean_absolute_error": 0.0007540433434769511
+    }
+  ],
+  "legacy_default_svg_matches_published": true,
+  "benchmark": {
+    "width": 8192,
+    "height": 4970,
+    "supersample": 4,
+    "tile_rows": 32,
+    "includes_srgb_preview": true,
+    "wall_seconds": 3.62,
+    "maximum_resident_set_bytes": 387104768,
+    "peak_memory_footprint_bytes": 88441744,
+    "method": "macOS /usr/bin/time -l; one local run; metrics are distinct and not portable",
+    "npy_file_bytes": 162857088
+  }
+}

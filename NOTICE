@@ -10,4 +10,19 @@ and derived chart data/images are not covered by the MIT license for our Python
 source code and are not declared public domain.
 
 Liberation Sans Regular 2.1.5 is bundled under the SIL Open Font License 1.1.
-See fonts/LICENSE and fonts/AUTHORS for the original notices.
+See assets/fonts/LICENSE and assets/fonts/AUTHORS for the original notices.
+
+Modern chart reconstructions: public-reference CIPA, e-SFR and s-SFR layouts.
+Sources: CIPA official 2022 chart instructions; Parulski, Wueller, Burns and
+Yoshida, Creation and Evolution of ISO 12233 (Electronic Imaging 2022,
+DOI 10.2352/EI.2022.34.9.IQSP-347), CC BY 4.0; IS&T chart examples; Applied Image
+QA100 public specifications/preview; Image Engineering TE253 public data sheet;
+publicly accessible older ISO12233:2014 dimensional/layout references.
+See data/modern_references.json for source URLs and fingerprints.
+Changes: analytic frequency/modulation generation, approximate measured layout,
+selected synthetic reflectance/OECF values, open-font labels, cropped CIPA frame,
+no printing footer, and selected grid gaps/centre mask/marker alignment.
+Full ISO12233:2024 geometry and conformance have not been verified.
+MIT covers our Python code only; it grants no additional rights to referenced
+or derived chart artwork, chart profiles, generated images or data. The original
+reference documents remain local and are not distributed with this repository.

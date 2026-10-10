@@ -10,7 +10,7 @@ import xml.etree.ElementTree as ET
 from svgpathtools import CubicBezier, Line, parse_path
 
 NS = "{http://www.w3.org/2000/svg}"
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 SOURCE_URL = "https://www.graphics.cornell.edu/~westin/misc/ISO_12233-reschart.svg"
 WIDTH, HEIGHT = 1121.273, 680.314
 
@@ -111,7 +111,7 @@ def measure(source):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--reference", type=Path, default=ROOT / "references/ISO_12233-reschart.svg")
-    parser.add_argument("--output", type=Path, default=ROOT / "chart_measurements.json")
+    parser.add_argument("--output", type=Path, default=ROOT / "data/iso2000_measurements.json")
     args = parser.parse_args()
     model = measure(args.reference)
     args.output.write_text(json.dumps(model, indent=2) + "\n")

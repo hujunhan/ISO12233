@@ -1,0 +1,388 @@
+{
+  "research_date": "2026-10-09",
+  "target_standard": "ISO 12233:2024",
+  "policy": "User authorized public-reference reconstruction on 2026-10-09. Approximate charts may be generated; unverified standard details remain explicit in the profile and output metadata.",
+  "sources": {
+    "iso2024": {
+      "url": "https://www.iso.org/standard/88626.html",
+      "kind": "official standard catalogue",
+      "local_file": "references/iso12233-2024-preview.pdf",
+      "sha256": "12a02198d5f975940d81d3ef8cc5808203809def572acd7a08c55a7bd1eb22ea",
+      "coverage": "14-page preview; annexes A, C, E absent"
+    },
+    "ist": {
+      "url": "https://www.imaging.org/IST/IST/Standards/Digital_Camera_Resolution_Tools.aspx",
+      "kind": "official resources",
+      "coverage": "chart examples and 4:1 preferred e-SFR contrast; no complete coordinate tables"
+    },
+    "evolution": {
+      "url": "https://library.imaging.org/ei/articles/34/9/IQSP-347",
+      "kind": "standard authors paper, CC BY 4.0",
+      "local_file": "references/iso12233-evolution-2022.pdf",
+      "sha256": "e0f0f6e30b1a803d0137dcfdbdba44d1dd4bffdee36139ecefb76bda82d51400",
+      "coverage": "history and illustrated layouts; 2022 draft, not final 2024 specifications"
+    },
+    "cipa": {
+      "url": "https://www.cipa.jp/dcs/hyres/parts/TCPF_220309_e.pdf",
+      "kind": "official CIPA instructions dated 2022-03-08",
+      "coverage": "2017-chart dimensions, feature descriptions and tolerances; no wedge coordinate table",
+      "local_file": "references/cipa-instructions-2022.pdf",
+      "sha256": "3cd0d27f45c983f9531ecb22b2cc84308d6df9e4413fa27b7ae9088d206ed78c"
+    },
+    "kerr": {
+      "url": "https://www.imatest.com/wp-content/uploads/2024/03/Kerr_EI2024_IQSP_Recommendations_for_the_Detection_and_Analysis_of_the_ISO_12233-2023_e-SFR_Slanted_Star.pdf",
+      "kind": "2024 research paper",
+      "coverage": "slanted-star analysis and ROI considerations, not complete chart specifications"
+    },
+    "indexed2024": {
+      "url": "https://iso.ieclist.ink/iso/ISO%2012233-2024%20PDF.pdf",
+      "kind": "search-indexed standard excerpts on third-party mirror",
+      "coverage": "table C.1 excerpts; full file returns HTTP 403; not a verified complete reference"
+    },
+    "indexed2024e": {
+      "url": "https://norm.isodoc.my/iso/ISO%2012233-2024%20PDF.pdf",
+      "kind": "search-indexed standard excerpts on third-party mirror",
+      "coverage": "table E.1 excerpts; full file unavailable; not a verified complete reference"
+    },
+    "qa100": {
+      "url": "https://www.appliedimage.com/wp-content/uploads/2023/04/QA-100_spec_v1-00-1.pdf",
+      "local_file": "references/qa100-public-spec.pdf",
+      "sha256": "693851cb6870ff6f418aeef5efcac139006d19aba977e3b65511f5cf79f8b60f",
+      "coverage": "Vendor 2023 chart dimensions, 4:1 slants and 20:1 OECF, illustrated layout"
+    },
+    "old_public": {
+      "url": "https://www.optochecker.com/en/assets/files/ISO-12233-2014-b8f0ca83e9cbfafb37d223565b9d8246.pdf",
+      "local_file": "references/iso12233-2014-public-reference.pdf",
+      "sha256": "d6e404069e24061ce5cc992478c2082779d26182b44f0c5a48a395668255bc2f",
+      "coverage": "Publicly accessible old standard; dimensional drawings and E.2 cell coordinates, not verification of final 2024 conformance"
+    },
+    "qa100_preview": {
+      "url": "https://www.appliedimage.com/wp-content/uploads/2023/03/QA-100-4-4-23.jpg",
+      "local_file": "references/qa100-public-preview.jpg",
+      "sha256": "483c51cfae0c3178ac668caf2d51df872bcce0872447363ec1ace1d3188b453c",
+      "coverage": "Higher-resolution vendor preview; no proprietary logo reproduced"
+    },
+    "te253": {
+      "url": "https://www.image-engineering.de/content/products/charts/te253_9x/downloads/TE253_9x_data_sheet.pdf",
+      "coverage": "Primary vendor data: nine stars, 16 patches each, 144/72 cycles; sizes/materials depend on variant"
+    }
+  },
+  "charts": {
+    "cipa": {
+      "status": "available_public_reconstruction",
+      "annex": "A",
+      "known": [
+        {
+          "parameter": "active_height_mm",
+          "value": 200,
+          "sources": [
+            "cipa"
+          ],
+          "verification": "official 2017-chart instructions; final 2024 cross-check pending"
+        },
+        {
+          "parameter": "active_aspect_ratio",
+          "value": "3:2",
+          "sources": [
+            "cipa"
+          ],
+          "verification": "official 2017-chart instructions; final 2024 cross-check pending"
+        },
+        {
+          "parameter": "visual_wedge_range_lw_ph",
+          "value": [
+            200,
+            2500
+          ],
+          "sources": [
+            "cipa",
+            "evolution"
+          ],
+          "verification": "official instructions and standard authors paper"
+        },
+        {
+          "parameter": "wedge_black_lines",
+          "value": 5,
+          "sources": [
+            "cipa"
+          ],
+          "verification": "official instructions"
+        },
+        {
+          "parameter": "multiburst_ranges_lw_ph",
+          "value": [
+            [
+              200,
+              1500
+            ],
+            [
+              1400,
+              2500
+            ]
+          ],
+          "sources": [
+            "cipa"
+          ],
+          "verification": "official instructions"
+        },
+        {
+          "parameter": "position_tolerance_mm",
+          "value": 0.2,
+          "sources": [
+            "cipa"
+          ],
+          "verification": "official 2017-chart instructions"
+        },
+        {
+          "parameter": "line_width_tolerance_fraction",
+          "value": 0.05,
+          "sources": [
+            "cipa"
+          ],
+          "verification": "official 2017-chart instructions"
+        },
+        {
+          "parameter": "large_area_reflectance_ratio",
+          "value": [
+            40,
+            80
+          ],
+          "sources": [
+            "cipa"
+          ],
+          "verification": "official 2017-chart instructions"
+        }
+      ],
+      "unverified_standard_details": [
+        "Final 2024 Annex A feature coordinates, dimensions and formula tables",
+        "Hyperbolic wedge boundaries and scale-position mapping",
+        "Peripheral patterns, zone plates and auxiliary feature geometry",
+        "Final-version check of 2017 CIPA specifications"
+      ]
+    },
+    "esfr2024": {
+      "status": "available_public_reconstruction",
+      "annex": "C",
+      "known": [
+        {
+          "parameter": "preferred_edge_reflectance_ratio",
+          "value": 4,
+          "sources": [
+            "ist"
+          ],
+          "verification": "official resource page"
+        },
+        {
+          "parameter": "star_cycles",
+          "value": 4,
+          "sources": [
+            "kerr",
+            "evolution"
+          ],
+          "verification": "research papers"
+        },
+        {
+          "parameter": "edge_start_angle_clockwise_from_vertical_deg",
+          "value": 5,
+          "sources": [
+            "indexed2024"
+          ],
+          "verification": "indexed table C.1 excerpt only"
+        },
+        {
+          "parameter": "sector_angle_deg",
+          "value": 45,
+          "sources": [
+            "indexed2024"
+          ],
+          "verification": "indexed table C.1 excerpt only"
+        },
+        {
+          "parameter": "star_size_fraction_of_active_height",
+          "value": 0.25,
+          "sources": [
+            "indexed2024"
+          ],
+          "verification": "indexed table C.1 excerpt only"
+        },
+        {
+          "parameter": "background_reflectance",
+          "value": 0.2,
+          "sources": [
+            "indexed2024"
+          ],
+          "verification": "indexed table C.1 excerpt only"
+        },
+        {
+          "parameter": "dark_reflectance",
+          "value": 0.05,
+          "sources": [
+            "indexed2024"
+          ],
+          "verification": "indexed table C.1 excerpt only"
+        },
+        {
+          "parameter": "example_oecf_patch_count",
+          "value": 16,
+          "sources": [
+            "evolution",
+            "indexed2024"
+          ],
+          "verification": "authors paper and indexed Annex C excerpt; 20-patch variant also allowed"
+        }
+      ],
+      "unverified_standard_details": [
+        "Verified complete Annex C layout and field-position definitions",
+        "ISO 14524 OECF patch reflectances, ordering and geometry",
+        "Framing marks, aspect-ratio indicators and asymmetric feature geometry",
+        "Cross-check indexed Table C.1 values against complete final standard"
+      ]
+    },
+    "ssfr": {
+      "status": "available_public_reconstruction",
+      "annex": "E",
+      "known": [
+        {
+          "parameter": "typical_cycles",
+          "value": 144,
+          "sources": [
+            "indexed2024e"
+          ],
+          "verification": "indexed table E.1 excerpt only"
+        },
+        {
+          "parameter": "lower_resolution_cycles",
+          "value": 72,
+          "sources": [
+            "indexed2024e"
+          ],
+          "verification": "indexed table E.1 excerpt only"
+        },
+        {
+          "parameter": "background_reflectance",
+          "value": 0.18,
+          "sources": [
+            "indexed2024e"
+          ],
+          "verification": "indexed table E.1 excerpt only"
+        },
+        {
+          "parameter": "linearization_patch_count",
+          "value": 16,
+          "sources": [
+            "evolution",
+            "indexed2024e"
+          ],
+          "verification": "authors paper and indexed table excerpt"
+        },
+        {
+          "parameter": "linearization_patch_spacing",
+          "value": "equally spaced in reflectance",
+          "sources": [
+            "indexed2024e"
+          ],
+          "verification": "indexed table E.1 excerpt only"
+        },
+        {
+          "parameter": "multiple_target_layout",
+          "value": [
+            3,
+            3
+          ],
+          "sources": [
+            "evolution"
+          ],
+          "verification": "authors paper; final 2024 cross-check pending"
+        },
+        {
+          "parameter": "modulation_domain",
+          "value": "linear reflectance, not display code values",
+          "sources": [
+            "indexed2024e"
+          ],
+          "verification": "indexed table E.1 excerpt only"
+        }
+      ],
+      "unverified_standard_details": [
+        "Verified complete Annex E and single-target Figure 6",
+        "Star radius, phase, contrast endpoints and centre-mask specification",
+        "Exact marker and gray-patch coordinates for complete layout",
+        "Final layout selection and dimensions for single and multiple targets"
+      ]
+    }
+  },
+  "public_reference_measurements": {
+    "cipa": {
+      "file": "references/cipa-chart-public.png",
+      "source_pdf_image_xref": 21,
+      "size_px": [
+        3307,
+        2340
+      ],
+      "approximate_active_bounds_px": [
+        467,
+        386,
+        2831,
+        1961
+      ],
+      "mapped_active_area_mm": [
+        20,
+        20,
+        300,
+        200
+      ]
+    },
+    "esfr2024": {
+      "file": "references/esfr-2023-draft-public.png",
+      "source_pdf_image_xref": 76,
+      "size_px": [
+        652,
+        451
+      ],
+      "approximate_active_bounds_px": [
+        29,
+        28,
+        623,
+        425
+      ],
+      "observed_star_centers_px": [
+        [
+          325,
+          226
+        ],
+        [
+          161,
+          225
+        ],
+        [
+          487,
+          225
+        ],
+        [
+          325,
+          80
+        ],
+        [
+          325,
+          371
+        ],
+        [
+          140,
+          86
+        ],
+        [
+          508,
+          86
+        ],
+        [
+          140,
+          365
+        ],
+        [
+          508,
+          365
+        ]
+      ]
+    }
+  }
+}

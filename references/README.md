@@ -20,3 +20,11 @@ embedded proprietary font subsets. They remain untracked local references;
 the generator uses the separately licensed Liberation Sans font instead.
 If fingerprints differ, investigate the source revision before re-measuring.
 The author disclaims ISO compliance; preserve that distinction in downstream use.
+
+## Modern charts
+
+Public source URLs, local filenames, SHA-256 fingerprints, coverage and approximate
+preview measurements are recorded in [data/modern_references.json](../data/modern_references.json).
+See [docs/modern-charts.md](../docs/modern-charts.md) for the selected parameters and
+unverified details. Downloaded PDFs and preview images remain ignored local references;
+public access does not imply permission to redistribute their originals.

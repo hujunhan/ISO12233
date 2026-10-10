@@ -1,0 +1,3030 @@
+{
+  "chart": "ssfr",
+  "reconstruction": "public-reference approximation",
+  "standard_certification": false,
+  "coordinate_unit": "mm",
+  "canvas_mm": [
+    1070,
+    810
+  ],
+  "quantity": "spectrally neutral synthetic linear reflectance",
+  "array_layout": "height,width",
+  "preview_transfer": "sRGB",
+  "width": 8192,
+  "height": 6201,
+  "profile": {
+    "status": "available_public_reconstruction",
+    "target_standard": "ISO 12233:2024",
+    "standard_certification": false,
+    "geometry_verified_against_full_2024_standard": false,
+    "coordinate_unit": "mm",
+    "reconstruction": "public-reference reconstruction; measured layout and explicitly selected parameters",
+    "parameters": {
+      "cell_size_mm": [
+        290,
+        270
+      ],
+      "radius_mm": 125,
+      "background": 0.18,
+      "gap_background": 0.08,
+      "column_gap_mm": 100,
+      "white": 0.9,
+      "black": 0.009,
+      "inner_radius_fraction": 0.1,
+      "phase_rad": 0,
+      "patch_positions_mm": [
+        [
+          260,
+          50
+        ],
+        [
+          260,
+          30
+        ],
+        [
+          230,
+          0
+        ],
+        [
+          210,
+          0
+        ],
+        [
+          60,
+          0
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          10,
+          30
+        ],
+        [
+          10,
+          50
+        ],
+        [
+          10,
+          200
+        ],
+        [
+          10,
+          220
+        ],
+        [
+          40,
+          250
+        ],
+        [
+          60,
+          250
+        ],
+        [
+          210,
+          250
+        ],
+        [
+          230,
+          250
+        ],
+        [
+          260,
+          220
+        ],
+        [
+          260,
+          200
+        ]
+      ],
+      "marker_holes_mm": [
+        [
+          16,
+          6
+        ],
+        [
+          266,
+          6
+        ],
+        [
+          16,
+          256
+        ],
+        [
+          266,
+          256
+        ]
+      ]
+    },
+    "provenance": {
+      "documented": {
+        "cell_star_markers_patches": "publicly accessible 2014 reference, Annex E table E.2: 290x270 mm, star diameter 250 mm, marker/patch coordinates",
+        "modulation": "144 cycles; 72-cycle alternative and 18% background, old Annex E and indexed 2024 E.1; primary vendor data independently corroborate cycle counts",
+        "patch_levels": "equally spaced in linear reflectance, 16 steps from bright to dark"
+      },
+      "measured_or_inferred": {
+        "grid": "3x3 arrangement from authors paper and old Figure E.1; 100 mm horizontal gaps estimated from relative star-centre spacing",
+        "centre_mask": "radius 1/10 of outer star radius estimated from authors Figure 8",
+        "top_right_marker": "white-hole y=6 mm follows visible symmetry in Figure 8; old E.2 lists y=0, so this is a recorded override"
+      },
+      "selected": {
+        "reflectance": "0.9 / 0.009 (100:1), synthetic endpoints, within publicly documented high-contrast range; not measured material values",
+        "gap_background": "0.08 synthetic dark gap",
+        "phase": "0 radians selected convention"
+      }
+    }
+  },
+  "shapes": [
+    {
+      "kind": "rect",
+      "bounds": [
+        0.0,
+        0.0,
+        290.0,
+        270.0
+      ],
+      "value": 0.18
+    },
+    {
+      "kind": "star",
+      "bounds": [
+        20.0,
+        10.0,
+        270.0,
+        260.0
+      ],
+      "center": [
+        145,
+        135
+      ],
+      "radius": 125,
+      "inner_radius": 12.5,
+      "cycles": 144,
+      "phase": 0,
+      "low": 0.009,
+      "high": 0.9,
+      "background": 0.18
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        0.0,
+        0.0,
+        40.0,
+        30.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        250.0,
+        0.0,
+        290.0,
+        30.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        0.0,
+        240.0,
+        40.0,
+        270.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        250.0,
+        240.0,
+        290.0,
+        270.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        16.0,
+        6.0,
+        24.0,
+        14.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        266.0,
+        6.0,
+        274.0,
+        14.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        16.0,
+        256.0,
+        24.0,
+        264.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        266.0,
+        256.0,
+        274.0,
+        264.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        260.0,
+        50.0,
+        280.0,
+        70.0
+      ],
+      "value": 0.9,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 1
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        260.0,
+        30.0,
+        280.0,
+        50.0
+      ],
+      "value": 0.8406,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 2
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        230.0,
+        0.0,
+        250.0,
+        20.0
+      ],
+      "value": 0.7812,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 3
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        210.0,
+        0.0,
+        230.0,
+        20.0
+      ],
+      "value": 0.7218,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 4
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        60.0,
+        0.0,
+        80.0,
+        20.0
+      ],
+      "value": 0.6624,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 5
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        40.0,
+        0.0,
+        60.0,
+        20.0
+      ],
+      "value": 0.603,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 6
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        10.0,
+        30.0,
+        30.0,
+        50.0
+      ],
+      "value": 0.5436000000000001,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 7
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        10.0,
+        50.0,
+        30.0,
+        70.0
+      ],
+      "value": 0.4842,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 8
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        10.0,
+        200.0,
+        30.0,
+        220.0
+      ],
+      "value": 0.4248,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        10.0,
+        220.0,
+        30.0,
+        240.0
+      ],
+      "value": 0.36540000000000006,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 10
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        40.0,
+        250.0,
+        60.0,
+        270.0
+      ],
+      "value": 0.30600000000000005,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 11
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        60.0,
+        250.0,
+        80.0,
+        270.0
+      ],
+      "value": 0.24660000000000004,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 12
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        210.0,
+        250.0,
+        230.0,
+        270.0
+      ],
+      "value": 0.18720000000000003,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 13
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        230.0,
+        250.0,
+        250.0,
+        270.0
+      ],
+      "value": 0.12780000000000002,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 14
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        260.0,
+        220.0,
+        280.0,
+        240.0
+      ],
+      "value": 0.06840000000000002,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 15
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        260.0,
+        200.0,
+        280.0,
+        220.0
+      ],
+      "value": 0.009,
+      "role": "linearization_patch",
+      "target_index": 0,
+      "patch_index": 16
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        390.0,
+        0.0,
+        680.0,
+        270.0
+      ],
+      "value": 0.18
+    },
+    {
+      "kind": "star",
+      "bounds": [
+        410.0,
+        10.0,
+        660.0,
+        260.0
+      ],
+      "center": [
+        535,
+        135
+      ],
+      "radius": 125,
+      "inner_radius": 12.5,
+      "cycles": 144,
+      "phase": 0,
+      "low": 0.009,
+      "high": 0.9,
+      "background": 0.18
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        390.0,
+        0.0,
+        430.0,
+        30.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        640.0,
+        0.0,
+        680.0,
+        30.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        390.0,
+        240.0,
+        430.0,
+        270.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        640.0,
+        240.0,
+        680.0,
+        270.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        406.0,
+        6.0,
+        414.0,
+        14.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        656.0,
+        6.0,
+        664.0,
+        14.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        406.0,
+        256.0,
+        414.0,
+        264.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        656.0,
+        256.0,
+        664.0,
+        264.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        650.0,
+        50.0,
+        670.0,
+        70.0
+      ],
+      "value": 0.9,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 1
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        650.0,
+        30.0,
+        670.0,
+        50.0
+      ],
+      "value": 0.8406,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 2
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        620.0,
+        0.0,
+        640.0,
+        20.0
+      ],
+      "value": 0.7812,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 3
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        600.0,
+        0.0,
+        620.0,
+        20.0
+      ],
+      "value": 0.7218,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 4
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        450.0,
+        0.0,
+        470.0,
+        20.0
+      ],
+      "value": 0.6624,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 5
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        430.0,
+        0.0,
+        450.0,
+        20.0
+      ],
+      "value": 0.603,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 6
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        400.0,
+        30.0,
+        420.0,
+        50.0
+      ],
+      "value": 0.5436000000000001,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 7
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        400.0,
+        50.0,
+        420.0,
+        70.0
+      ],
+      "value": 0.4842,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 8
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        400.0,
+        200.0,
+        420.0,
+        220.0
+      ],
+      "value": 0.4248,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        400.0,
+        220.0,
+        420.0,
+        240.0
+      ],
+      "value": 0.36540000000000006,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 10
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        430.0,
+        250.0,
+        450.0,
+        270.0
+      ],
+      "value": 0.30600000000000005,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 11
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        450.0,
+        250.0,
+        470.0,
+        270.0
+      ],
+      "value": 0.24660000000000004,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 12
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        600.0,
+        250.0,
+        620.0,
+        270.0
+      ],
+      "value": 0.18720000000000003,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 13
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        620.0,
+        250.0,
+        640.0,
+        270.0
+      ],
+      "value": 0.12780000000000002,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 14
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        650.0,
+        220.0,
+        670.0,
+        240.0
+      ],
+      "value": 0.06840000000000002,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 15
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        650.0,
+        200.0,
+        670.0,
+        220.0
+      ],
+      "value": 0.009,
+      "role": "linearization_patch",
+      "target_index": 1,
+      "patch_index": 16
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        780.0,
+        0.0,
+        1070.0,
+        270.0
+      ],
+      "value": 0.18
+    },
+    {
+      "kind": "star",
+      "bounds": [
+        800.0,
+        10.0,
+        1050.0,
+        260.0
+      ],
+      "center": [
+        925,
+        135
+      ],
+      "radius": 125,
+      "inner_radius": 12.5,
+      "cycles": 144,
+      "phase": 0,
+      "low": 0.009,
+      "high": 0.9,
+      "background": 0.18
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        780.0,
+        0.0,
+        820.0,
+        30.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1030.0,
+        0.0,
+        1070.0,
+        30.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        780.0,
+        240.0,
+        820.0,
+        270.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1030.0,
+        240.0,
+        1070.0,
+        270.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        796.0,
+        6.0,
+        804.0,
+        14.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1046.0,
+        6.0,
+        1054.0,
+        14.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        796.0,
+        256.0,
+        804.0,
+        264.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1046.0,
+        256.0,
+        1054.0,
+        264.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1040.0,
+        50.0,
+        1060.0,
+        70.0
+      ],
+      "value": 0.9,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 1
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1040.0,
+        30.0,
+        1060.0,
+        50.0
+      ],
+      "value": 0.8406,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 2
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1010.0,
+        0.0,
+        1030.0,
+        20.0
+      ],
+      "value": 0.7812,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 3
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        990.0,
+        0.0,
+        1010.0,
+        20.0
+      ],
+      "value": 0.7218,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 4
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        840.0,
+        0.0,
+        860.0,
+        20.0
+      ],
+      "value": 0.6624,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 5
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        820.0,
+        0.0,
+        840.0,
+        20.0
+      ],
+      "value": 0.603,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 6
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        790.0,
+        30.0,
+        810.0,
+        50.0
+      ],
+      "value": 0.5436000000000001,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 7
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        790.0,
+        50.0,
+        810.0,
+        70.0
+      ],
+      "value": 0.4842,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 8
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        790.0,
+        200.0,
+        810.0,
+        220.0
+      ],
+      "value": 0.4248,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        790.0,
+        220.0,
+        810.0,
+        240.0
+      ],
+      "value": 0.36540000000000006,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 10
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        820.0,
+        250.0,
+        840.0,
+        270.0
+      ],
+      "value": 0.30600000000000005,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 11
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        840.0,
+        250.0,
+        860.0,
+        270.0
+      ],
+      "value": 0.24660000000000004,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 12
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        990.0,
+        250.0,
+        1010.0,
+        270.0
+      ],
+      "value": 0.18720000000000003,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 13
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1010.0,
+        250.0,
+        1030.0,
+        270.0
+      ],
+      "value": 0.12780000000000002,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 14
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1040.0,
+        220.0,
+        1060.0,
+        240.0
+      ],
+      "value": 0.06840000000000002,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 15
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1040.0,
+        200.0,
+        1060.0,
+        220.0
+      ],
+      "value": 0.009,
+      "role": "linearization_patch",
+      "target_index": 2,
+      "patch_index": 16
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        0.0,
+        270.0,
+        290.0,
+        540.0
+      ],
+      "value": 0.18
+    },
+    {
+      "kind": "star",
+      "bounds": [
+        20.0,
+        280.0,
+        270.0,
+        530.0
+      ],
+      "center": [
+        145,
+        405
+      ],
+      "radius": 125,
+      "inner_radius": 12.5,
+      "cycles": 144,
+      "phase": 0,
+      "low": 0.009,
+      "high": 0.9,
+      "background": 0.18
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        0.0,
+        270.0,
+        40.0,
+        300.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        250.0,
+        270.0,
+        290.0,
+        300.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        0.0,
+        510.0,
+        40.0,
+        540.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        250.0,
+        510.0,
+        290.0,
+        540.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        16.0,
+        276.0,
+        24.0,
+        284.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        266.0,
+        276.0,
+        274.0,
+        284.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        16.0,
+        526.0,
+        24.0,
+        534.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        266.0,
+        526.0,
+        274.0,
+        534.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        260.0,
+        320.0,
+        280.0,
+        340.0
+      ],
+      "value": 0.9,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 1
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        260.0,
+        300.0,
+        280.0,
+        320.0
+      ],
+      "value": 0.8406,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 2
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        230.0,
+        270.0,
+        250.0,
+        290.0
+      ],
+      "value": 0.7812,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 3
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        210.0,
+        270.0,
+        230.0,
+        290.0
+      ],
+      "value": 0.7218,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 4
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        60.0,
+        270.0,
+        80.0,
+        290.0
+      ],
+      "value": 0.6624,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 5
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        40.0,
+        270.0,
+        60.0,
+        290.0
+      ],
+      "value": 0.603,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 6
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        10.0,
+        300.0,
+        30.0,
+        320.0
+      ],
+      "value": 0.5436000000000001,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 7
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        10.0,
+        320.0,
+        30.0,
+        340.0
+      ],
+      "value": 0.4842,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 8
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        10.0,
+        470.0,
+        30.0,
+        490.0
+      ],
+      "value": 0.4248,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        10.0,
+        490.0,
+        30.0,
+        510.0
+      ],
+      "value": 0.36540000000000006,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 10
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        40.0,
+        520.0,
+        60.0,
+        540.0
+      ],
+      "value": 0.30600000000000005,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 11
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        60.0,
+        520.0,
+        80.0,
+        540.0
+      ],
+      "value": 0.24660000000000004,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 12
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        210.0,
+        520.0,
+        230.0,
+        540.0
+      ],
+      "value": 0.18720000000000003,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 13
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        230.0,
+        520.0,
+        250.0,
+        540.0
+      ],
+      "value": 0.12780000000000002,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 14
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        260.0,
+        490.0,
+        280.0,
+        510.0
+      ],
+      "value": 0.06840000000000002,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 15
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        260.0,
+        470.0,
+        280.0,
+        490.0
+      ],
+      "value": 0.009,
+      "role": "linearization_patch",
+      "target_index": 3,
+      "patch_index": 16
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        390.0,
+        270.0,
+        680.0,
+        540.0
+      ],
+      "value": 0.18
+    },
+    {
+      "kind": "star",
+      "bounds": [
+        410.0,
+        280.0,
+        660.0,
+        530.0
+      ],
+      "center": [
+        535,
+        405
+      ],
+      "radius": 125,
+      "inner_radius": 12.5,
+      "cycles": 144,
+      "phase": 0,
+      "low": 0.009,
+      "high": 0.9,
+      "background": 0.18
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        390.0,
+        270.0,
+        430.0,
+        300.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        640.0,
+        270.0,
+        680.0,
+        300.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        390.0,
+        510.0,
+        430.0,
+        540.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        640.0,
+        510.0,
+        680.0,
+        540.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        406.0,
+        276.0,
+        414.0,
+        284.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        656.0,
+        276.0,
+        664.0,
+        284.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        406.0,
+        526.0,
+        414.0,
+        534.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        656.0,
+        526.0,
+        664.0,
+        534.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        650.0,
+        320.0,
+        670.0,
+        340.0
+      ],
+      "value": 0.9,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 1
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        650.0,
+        300.0,
+        670.0,
+        320.0
+      ],
+      "value": 0.8406,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 2
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        620.0,
+        270.0,
+        640.0,
+        290.0
+      ],
+      "value": 0.7812,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 3
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        600.0,
+        270.0,
+        620.0,
+        290.0
+      ],
+      "value": 0.7218,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 4
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        450.0,
+        270.0,
+        470.0,
+        290.0
+      ],
+      "value": 0.6624,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 5
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        430.0,
+        270.0,
+        450.0,
+        290.0
+      ],
+      "value": 0.603,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 6
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        400.0,
+        300.0,
+        420.0,
+        320.0
+      ],
+      "value": 0.5436000000000001,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 7
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        400.0,
+        320.0,
+        420.0,
+        340.0
+      ],
+      "value": 0.4842,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 8
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        400.0,
+        470.0,
+        420.0,
+        490.0
+      ],
+      "value": 0.4248,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        400.0,
+        490.0,
+        420.0,
+        510.0
+      ],
+      "value": 0.36540000000000006,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 10
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        430.0,
+        520.0,
+        450.0,
+        540.0
+      ],
+      "value": 0.30600000000000005,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 11
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        450.0,
+        520.0,
+        470.0,
+        540.0
+      ],
+      "value": 0.24660000000000004,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 12
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        600.0,
+        520.0,
+        620.0,
+        540.0
+      ],
+      "value": 0.18720000000000003,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 13
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        620.0,
+        520.0,
+        640.0,
+        540.0
+      ],
+      "value": 0.12780000000000002,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 14
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        650.0,
+        490.0,
+        670.0,
+        510.0
+      ],
+      "value": 0.06840000000000002,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 15
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        650.0,
+        470.0,
+        670.0,
+        490.0
+      ],
+      "value": 0.009,
+      "role": "linearization_patch",
+      "target_index": 4,
+      "patch_index": 16
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        780.0,
+        270.0,
+        1070.0,
+        540.0
+      ],
+      "value": 0.18
+    },
+    {
+      "kind": "star",
+      "bounds": [
+        800.0,
+        280.0,
+        1050.0,
+        530.0
+      ],
+      "center": [
+        925,
+        405
+      ],
+      "radius": 125,
+      "inner_radius": 12.5,
+      "cycles": 144,
+      "phase": 0,
+      "low": 0.009,
+      "high": 0.9,
+      "background": 0.18
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        780.0,
+        270.0,
+        820.0,
+        300.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1030.0,
+        270.0,
+        1070.0,
+        300.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        780.0,
+        510.0,
+        820.0,
+        540.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1030.0,
+        510.0,
+        1070.0,
+        540.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        796.0,
+        276.0,
+        804.0,
+        284.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1046.0,
+        276.0,
+        1054.0,
+        284.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        796.0,
+        526.0,
+        804.0,
+        534.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1046.0,
+        526.0,
+        1054.0,
+        534.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1040.0,
+        320.0,
+        1060.0,
+        340.0
+      ],
+      "value": 0.9,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 1
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1040.0,
+        300.0,
+        1060.0,
+        320.0
+      ],
+      "value": 0.8406,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 2
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1010.0,
+        270.0,
+        1030.0,
+        290.0
+      ],
+      "value": 0.7812,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 3
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        990.0,
+        270.0,
+        1010.0,
+        290.0
+      ],
+      "value": 0.7218,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 4
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        840.0,
+        270.0,
+        860.0,
+        290.0
+      ],
+      "value": 0.6624,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 5
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        820.0,
+        270.0,
+        840.0,
+        290.0
+      ],
+      "value": 0.603,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 6
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        790.0,
+        300.0,
+        810.0,
+        320.0
+      ],
+      "value": 0.5436000000000001,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 7
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        790.0,
+        320.0,
+        810.0,
+        340.0
+      ],
+      "value": 0.4842,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 8
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        790.0,
+        470.0,
+        810.0,
+        490.0
+      ],
+      "value": 0.4248,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        790.0,
+        490.0,
+        810.0,
+        510.0
+      ],
+      "value": 0.36540000000000006,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 10
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        820.0,
+        520.0,
+        840.0,
+        540.0
+      ],
+      "value": 0.30600000000000005,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 11
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        840.0,
+        520.0,
+        860.0,
+        540.0
+      ],
+      "value": 0.24660000000000004,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 12
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        990.0,
+        520.0,
+        1010.0,
+        540.0
+      ],
+      "value": 0.18720000000000003,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 13
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1010.0,
+        520.0,
+        1030.0,
+        540.0
+      ],
+      "value": 0.12780000000000002,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 14
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1040.0,
+        490.0,
+        1060.0,
+        510.0
+      ],
+      "value": 0.06840000000000002,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 15
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1040.0,
+        470.0,
+        1060.0,
+        490.0
+      ],
+      "value": 0.009,
+      "role": "linearization_patch",
+      "target_index": 5,
+      "patch_index": 16
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        0.0,
+        540.0,
+        290.0,
+        810.0
+      ],
+      "value": 0.18
+    },
+    {
+      "kind": "star",
+      "bounds": [
+        20.0,
+        550.0,
+        270.0,
+        800.0
+      ],
+      "center": [
+        145,
+        675
+      ],
+      "radius": 125,
+      "inner_radius": 12.5,
+      "cycles": 144,
+      "phase": 0,
+      "low": 0.009,
+      "high": 0.9,
+      "background": 0.18
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        0.0,
+        540.0,
+        40.0,
+        570.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        250.0,
+        540.0,
+        290.0,
+        570.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        0.0,
+        780.0,
+        40.0,
+        810.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        250.0,
+        780.0,
+        290.0,
+        810.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        16.0,
+        546.0,
+        24.0,
+        554.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        266.0,
+        546.0,
+        274.0,
+        554.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        16.0,
+        796.0,
+        24.0,
+        804.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        266.0,
+        796.0,
+        274.0,
+        804.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        260.0,
+        590.0,
+        280.0,
+        610.0
+      ],
+      "value": 0.9,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 1
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        260.0,
+        570.0,
+        280.0,
+        590.0
+      ],
+      "value": 0.8406,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 2
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        230.0,
+        540.0,
+        250.0,
+        560.0
+      ],
+      "value": 0.7812,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 3
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        210.0,
+        540.0,
+        230.0,
+        560.0
+      ],
+      "value": 0.7218,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 4
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        60.0,
+        540.0,
+        80.0,
+        560.0
+      ],
+      "value": 0.6624,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 5
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        40.0,
+        540.0,
+        60.0,
+        560.0
+      ],
+      "value": 0.603,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 6
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        10.0,
+        570.0,
+        30.0,
+        590.0
+      ],
+      "value": 0.5436000000000001,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 7
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        10.0,
+        590.0,
+        30.0,
+        610.0
+      ],
+      "value": 0.4842,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 8
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        10.0,
+        740.0,
+        30.0,
+        760.0
+      ],
+      "value": 0.4248,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        10.0,
+        760.0,
+        30.0,
+        780.0
+      ],
+      "value": 0.36540000000000006,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 10
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        40.0,
+        790.0,
+        60.0,
+        810.0
+      ],
+      "value": 0.30600000000000005,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 11
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        60.0,
+        790.0,
+        80.0,
+        810.0
+      ],
+      "value": 0.24660000000000004,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 12
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        210.0,
+        790.0,
+        230.0,
+        810.0
+      ],
+      "value": 0.18720000000000003,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 13
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        230.0,
+        790.0,
+        250.0,
+        810.0
+      ],
+      "value": 0.12780000000000002,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 14
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        260.0,
+        760.0,
+        280.0,
+        780.0
+      ],
+      "value": 0.06840000000000002,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 15
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        260.0,
+        740.0,
+        280.0,
+        760.0
+      ],
+      "value": 0.009,
+      "role": "linearization_patch",
+      "target_index": 6,
+      "patch_index": 16
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        390.0,
+        540.0,
+        680.0,
+        810.0
+      ],
+      "value": 0.18
+    },
+    {
+      "kind": "star",
+      "bounds": [
+        410.0,
+        550.0,
+        660.0,
+        800.0
+      ],
+      "center": [
+        535,
+        675
+      ],
+      "radius": 125,
+      "inner_radius": 12.5,
+      "cycles": 144,
+      "phase": 0,
+      "low": 0.009,
+      "high": 0.9,
+      "background": 0.18
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        390.0,
+        540.0,
+        430.0,
+        570.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        640.0,
+        540.0,
+        680.0,
+        570.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        390.0,
+        780.0,
+        430.0,
+        810.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        640.0,
+        780.0,
+        680.0,
+        810.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        406.0,
+        546.0,
+        414.0,
+        554.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        656.0,
+        546.0,
+        664.0,
+        554.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        406.0,
+        796.0,
+        414.0,
+        804.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        656.0,
+        796.0,
+        664.0,
+        804.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        650.0,
+        590.0,
+        670.0,
+        610.0
+      ],
+      "value": 0.9,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 1
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        650.0,
+        570.0,
+        670.0,
+        590.0
+      ],
+      "value": 0.8406,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 2
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        620.0,
+        540.0,
+        640.0,
+        560.0
+      ],
+      "value": 0.7812,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 3
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        600.0,
+        540.0,
+        620.0,
+        560.0
+      ],
+      "value": 0.7218,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 4
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        450.0,
+        540.0,
+        470.0,
+        560.0
+      ],
+      "value": 0.6624,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 5
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        430.0,
+        540.0,
+        450.0,
+        560.0
+      ],
+      "value": 0.603,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 6
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        400.0,
+        570.0,
+        420.0,
+        590.0
+      ],
+      "value": 0.5436000000000001,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 7
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        400.0,
+        590.0,
+        420.0,
+        610.0
+      ],
+      "value": 0.4842,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 8
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        400.0,
+        740.0,
+        420.0,
+        760.0
+      ],
+      "value": 0.4248,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        400.0,
+        760.0,
+        420.0,
+        780.0
+      ],
+      "value": 0.36540000000000006,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 10
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        430.0,
+        790.0,
+        450.0,
+        810.0
+      ],
+      "value": 0.30600000000000005,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 11
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        450.0,
+        790.0,
+        470.0,
+        810.0
+      ],
+      "value": 0.24660000000000004,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 12
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        600.0,
+        790.0,
+        620.0,
+        810.0
+      ],
+      "value": 0.18720000000000003,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 13
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        620.0,
+        790.0,
+        640.0,
+        810.0
+      ],
+      "value": 0.12780000000000002,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 14
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        650.0,
+        760.0,
+        670.0,
+        780.0
+      ],
+      "value": 0.06840000000000002,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 15
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        650.0,
+        740.0,
+        670.0,
+        760.0
+      ],
+      "value": 0.009,
+      "role": "linearization_patch",
+      "target_index": 7,
+      "patch_index": 16
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        780.0,
+        540.0,
+        1070.0,
+        810.0
+      ],
+      "value": 0.18
+    },
+    {
+      "kind": "star",
+      "bounds": [
+        800.0,
+        550.0,
+        1050.0,
+        800.0
+      ],
+      "center": [
+        925,
+        675
+      ],
+      "radius": 125,
+      "inner_radius": 12.5,
+      "cycles": 144,
+      "phase": 0,
+      "low": 0.009,
+      "high": 0.9,
+      "background": 0.18
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        780.0,
+        540.0,
+        820.0,
+        570.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1030.0,
+        540.0,
+        1070.0,
+        570.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        780.0,
+        780.0,
+        820.0,
+        810.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1030.0,
+        780.0,
+        1070.0,
+        810.0
+      ],
+      "value": 0.009
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        796.0,
+        546.0,
+        804.0,
+        554.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1046.0,
+        546.0,
+        1054.0,
+        554.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        796.0,
+        796.0,
+        804.0,
+        804.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1046.0,
+        796.0,
+        1054.0,
+        804.0
+      ],
+      "value": 0.9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1040.0,
+        590.0,
+        1060.0,
+        610.0
+      ],
+      "value": 0.9,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 1
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1040.0,
+        570.0,
+        1060.0,
+        590.0
+      ],
+      "value": 0.8406,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 2
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1010.0,
+        540.0,
+        1030.0,
+        560.0
+      ],
+      "value": 0.7812,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 3
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        990.0,
+        540.0,
+        1010.0,
+        560.0
+      ],
+      "value": 0.7218,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 4
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        840.0,
+        540.0,
+        860.0,
+        560.0
+      ],
+      "value": 0.6624,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 5
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        820.0,
+        540.0,
+        840.0,
+        560.0
+      ],
+      "value": 0.603,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 6
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        790.0,
+        570.0,
+        810.0,
+        590.0
+      ],
+      "value": 0.5436000000000001,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 7
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        790.0,
+        590.0,
+        810.0,
+        610.0
+      ],
+      "value": 0.4842,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 8
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        790.0,
+        740.0,
+        810.0,
+        760.0
+      ],
+      "value": 0.4248,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 9
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        790.0,
+        760.0,
+        810.0,
+        780.0
+      ],
+      "value": 0.36540000000000006,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 10
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        820.0,
+        790.0,
+        840.0,
+        810.0
+      ],
+      "value": 0.30600000000000005,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 11
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        840.0,
+        790.0,
+        860.0,
+        810.0
+      ],
+      "value": 0.24660000000000004,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 12
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        990.0,
+        790.0,
+        1010.0,
+        810.0
+      ],
+      "value": 0.18720000000000003,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 13
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1010.0,
+        790.0,
+        1030.0,
+        810.0
+      ],
+      "value": 0.12780000000000002,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 14
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1040.0,
+        760.0,
+        1060.0,
+        780.0
+      ],
+      "value": 0.06840000000000002,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 15
+    },
+    {
+      "kind": "rect",
+      "bounds": [
+        1040.0,
+        740.0,
+        1060.0,
+        760.0
+      ],
+      "value": 0.009,
+      "role": "linearization_patch",
+      "target_index": 8,
+      "patch_index": 16
+    }
+  ],
+  "labels": [],
+  "sampling": {
+    "width": 8192,
+    "height": 6201,
+    "dtype": "float32",
+    "minimum": 0.008999999612569809,
+    "maximum": 0.8999999761581421,
+    "mean": 0.3133153757663081,
+    "supersample": 4,
+    "tile_rows": 16,
+    "sampling": "uniform box integration of analytic reflectance samples",
+    "gamma_applied": false,
+    "label_coverage": "MuPDF native-resolution 8-bit coverage"
+  },
+  "linear_file": "output/linear/ssfr.npy",
+  "svg_embedded_images": "Generated display previews only; do not decode as float ground truth",
+  "generator_sha256": {
+    "iso12233/modern_charts.py": "e62e48778f6b6ef32cf8d546f0581f449cc98012e0cd0e4557efcd4cf3f576e3",
+    "data/modern_profiles.json": "263f1b64ceacf746cfdb43e2a62c7dcabae4b722996768b824dce4681c8bebc1",
+    "iso12233/generate_chart.py": "f51d63a1283647ffd651ca0545cc8a7629a97ad77f7efb3e3dc5c184363f8f29"
+  },
+  "ssfr": {
+    "layout": "grid",
+    "cycles": 144,
+    "frequency_formula_cycles_per_mm": "cycles/(2*pi*radius_mm)",
+    "max_unmasked_frequency_cycles_per_pixel": 0.23947845343358626,
+    "svg_star_raster_width": 1914
+  }
+}

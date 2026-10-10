@@ -13,8 +13,8 @@ import pymupdf
 from scipy.spatial import cKDTree
 from svgpathtools import CubicBezier, Line, parse_path
 
-from generate_chart import ROOT, build_chart, render_svg
-from measure_chart import HEIGHT, NS, WIDTH, chart_paths
+from iso12233.generate_chart import ROOT, build_chart, render_svg
+from iso12233.measure_chart import HEIGHT, NS, WIDTH, chart_paths
 
 
 def segment_vectors(path, origin=0j):
@@ -211,7 +211,7 @@ def validate(reference_path, output, widths=(2048, 8192)):
             sheet.save(output/"detail-comparison.png")
         print(f"Raster {width}: {stats}", flush=True)
         del a,b,av,bv,delta,changed
-    model = json.loads((ROOT/"chart_measurements.json").read_text())
+    model = json.loads((ROOT/"data/iso2000_measurements.json").read_text())
     report["labels"] = {"count": sum(len(c["labels"]) for c in model["components"]),
                          "policy": "Measured content, baseline and size; Liberation Sans outlines. "
                                    "Glyph shapes differ and are excluded from geometry raster comparison."}
@@ -223,6 +223,6 @@ def validate(reference_path, output, widths=(2048, 8192)):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--reference",type=Path,default=ROOT/"references/ISO_12233-reschart.svg")
-    parser.add_argument("--output",type=Path,default=ROOT/"output/validation")
+    parser.add_argument("--output",type=Path,default=ROOT/"output/validation/iso2000")
     args = parser.parse_args()
     validate(args.reference,args.output)

@@ -1,25 +1,30 @@
 # ISO12233
 
-A Python + drawsvg reconstruction of Stephen H. Westin's ISO12233:2000
-resolution chart, for camera simulation and image-quality/ISP experiments.
-This is a measured reconstruction of Westin's artwork, not a certified ISO
-test target or an independently verified implementation of the ISO standard.
+Python + drawsvg test-chart generation for camera simulation and image-quality/ISP
+experiments. Four chart families are available: a measured Westin ISO12233:2000
+reconstruction, CIPA resolution wedges, e-SFR slanted stars and s-SFR sine stars.
 
-![Measured reconstruction](preview.png)
+These are synthetic chart inputs, not captured RAW images. The modern charts
+are reconstructed from public references; they are not certified ISO targets.
 
-## Ready-made outputs
+## Choose a chart
 
-- [Vector SVG](charts/iso12233.svg)
-- [8192 x 4970 PNG](charts/iso12233-8192.png)
-- [Machine-readable validation report](validation/report.json)
+| Chart | Purpose | Size | SVG | PNG | Parameters |
+|---|---|---|---|---|---|
+| ISO12233:2000 | Classic bars, wedges, sweeps and zone plate | 8192×4970 | [SVG](charts/iso2000/chart.svg) | [PNG](charts/iso2000/preview-8192.png) | [Measurements](data/iso2000_measurements.json) |
+| CIPA | Visual resolution, five-line wedges and sweeps | 8192×5783 | [SVG](charts/cipa/chart.svg) | [PNG](charts/cipa/preview-8192.png) | [JSON](charts/cipa/metadata.json) |
+| e-SFR | Nine slanted stars, 4:1 linear contrast | 8192×5783 | [SVG](charts/esfr2024/chart.svg) | [PNG](charts/esfr2024/preview-8192.png) | [JSON](charts/esfr2024/metadata.json) |
+| s-SFR | Nine sinusoidal stars, 144 cycles | 8192×6201 | [SVG](charts/ssfr/chart.svg) | [PNG](charts/ssfr/preview-8192.png) | [JSON](charts/ssfr/metadata.json) |
 
-Use these as synthetic chart inputs for optical/sensor simulation. They are
-chart artwork, not captured camera images, RAW data, or an ISP scoring protocol.
+[Preview the three modern charts together](charts/modern-contact-sheet.png) ·
+[Classic chart thumbnail](charts/iso2000/thumbnail.png)
 
-## Generate
+Each chart has one folder in `charts/`, with consistent `chart.svg`,
+`preview-8192.png` and, for modern charts, `metadata.json` filenames.
 
-Python 3.10 or later is required. No original PDF/SVG, system fonts, Cairo,
-Octave, ISETCam, or network connection is needed after installation.
+## Install and generate
+
+Python 3.10 or later. Run commands from the repository root:
 
 ```bash
 git clone https://github.com/hujunhan/ISO12233.git
@@ -27,91 +32,86 @@ cd ISO12233
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python generate_chart.py --output output/iso12233.svg
-python generate_chart.py --output output/iso12233.svg --png output/iso12233.png --width 8192
+
+# Classic chart
+python -m iso12233.generate_chart --chart iso2000 \
+  --output output/runs/iso2000/chart.svg --png output/runs/iso2000/preview.png --width 8192
+
+# Linear-reflectance data for optical/sensor simulation
+python -m iso12233.generate_chart --chart esfr2024 \
+  --output output/runs/esfr2024/chart.svg --linear output/runs/esfr2024/reflectance.npy \
+  --png output/runs/esfr2024/preview.png --metadata output/runs/esfr2024/metadata.json --width 8192
+
+# Single sine star, 72 cycles
+python -m iso12233.generate_chart --chart ssfr --ssfr-layout single --cycles 72 \
+  --output output/runs/ssfr72/chart.svg --linear output/runs/ssfr72/reflectance.npy --width 4096
 ```
 
-The PNG is **8192 x 4970**, preserving the source aspect ratio rather than
-stretching it to a 4:3 sensor canvas. PNG rendering uses PyMuPDF at 2x sampling
-followed by Lanczos reduction. SVG remains resolution independent. To simulate
-a differently shaped sensor, fit the chart into that canvas in the camera
-simulation stage.
+Use `--chart cipa`, `esfr2024` or `ssfr` for the modern families. Add
+`--supersample 8` or `16` for more precise subpixel integration. Keep the chart's
+aspect ratio and fit it into the sensor canvas during camera simulation.
+Generation runs offline after installation; original reference files are needed
+only for re-measurement and comparison against the source.
 
-The cropped SVG viewBox is `0 0 1121.273 680.314`, in 1/72-inch points.
-The outer frame is approximately 395.56 x 240 mm. The inner white rectangle
-is approximately 355.56 x 200 mm. **LW/PH frequency labels refer to the
-inner active picture height, not the height of the outer black frame.**
-Changing label text alone does not change a pattern's physical frequency.
+For simulation, use float32 **linear reflectance NPY**, not the display PNG.
+Modern PNG/SVG display assets use sRGB encoding; the legacy display retains
+Westin's artwork colors. Modern metadata records reflectance, geometry,
+frequency definitions, sampling and parameter provenance. The legacy `--linear`
+option assumes neutral black=0 and white=1. NPY data are generated locally and
+are not included in Git.
 
-## What is parameterized
+## Repository layout
 
-`chart_measurements.json` contains 20 named components, 1,154 painted shapes,
-159 labels, and 382 reusable primitives. It stores rectangle widths/heights,
-relative polygon vertices, polyline coordinates, and measured cubic/linear
-contours, separately from per-instance placement and paint styles. It has no
-SVG path strings, font blobs, or embedded reference document.
+```text
+ISO12233/
+├── iso12233/          Python generator, measurement and validation modules
+├── data/              Measured legacy geometry, modern profiles and source inventory
+├── charts/            Ready-made SVG/PNG/JSON, one folder per chart family
+│   ├── iso2000/
+│   ├── cipa/
+│   ├── esfr2024/
+│   └── ssfr/
+├── docs/              Reconstruction methods and validation explanations
+├── reports/           Published numerical reports: iso2000/ and modern/
+├── tests/             Geometry, reflectance, sampling and CLI tests
+├── assets/fonts/      Bundled open font and its license
+├── references/        Locally downloaded original references (ignored by Git)
+└── output/            Local generated data and experiments (ignored by Git)
+    ├── linear/        Existing full-resolution NPY data
+    ├── benchmarks/    Local generation timing and memory logs
+    ├── validation/    Validation previews and reports
+    ├── runs/          Suggested destination for new generations
+    └── archive/       Preserved earlier experimental outputs
+```
 
-For example, moving an instance's `origin` moves that shape; changing a
-rectangle primitive's `width` modifies every instance sharing that primitive.
-To change one instance only, duplicate its primitive and update its index.
-All repeated contours share the same renderer. Component IDs preserve the
-source names for wedges, sweeps, bars, checkerboard, arrows and zone plate.
+`charts/` holds the distributable examples; `output/` is the local workspace.
+Earlier experiments have been moved into `output/archive/`.
 
-### Wedges and sweeps
+## Details and verification
 
-The continuous square-wave sweeps use **384 straight strokes** (192 in each
-direction), plus two compound tick-mark paths. Stroke positions and widths
-are measured individually. No spline is used for these sweeps.
-
-Resolution wedges use closed polygon outlines: 52-53 vertices per low-frequency
-stripe, and 22 or 62-63 per high-frequency stripe. These counts include both
-sides of each stripe. Across the wedge groups there are 136 stripes and 5,391
-outline vertices, excluding labels and tick marks. Their smooth appearance
-comes from dense line segments and raster antialiasing; the generator does
-not fit new splines. The center zone plate also uses measured cubic curves.
-
-This first version deliberately preserves measured contour samples and the
-source's small asymmetries. **It does not replace every wedge/sweep with an
-ideal analytic frequency formula.** Such a replacement would be a different
-chart and would require separate frequency validation. Labels are rendered
-as Liberation Sans outlines at their measured baselines/sizes, ensuring
-portable appearance. Their glyphs differ from Westin's Myriad/Arial labels.
-The printing footer is omitted; source attribution lives in this README,
-NOTICE and SVG metadata.
-
-## Re-measure and validate
-
-Obtain the reference documents as described in [references/README.md](references/README.md).
-Reference files are not tracked. Measurement/validation dependencies are
-included in requirements.txt; normal generation only uses the checked-in
-measurements and open font.
+- [Classic chart geometry, wedges and sweeps](docs/iso2000-chart.md)
+- [Modern chart formulas, reference measurements and approximation limits](docs/modern-charts.md)
+- [Classic source validation](docs/iso2000-validation.md) · [Report](reports/iso2000/geometry.json)
+- [Modern sampling and reference comparison report](reports/modern/validation.json)
+- [Modern parameter profiles](data/modern_profiles.json) · [Public source inventory](data/modern_references.json)
+- [Original reference downloads](references/README.md)
 
 ```bash
-python measure_chart.py --reference references/ISO_12233-reschart.svg --output chart_measurements.json
-python validate_chart.py --reference references/ISO_12233-reschart.svg --output output/validation
-python -m unittest -v test_chart
+python -m unittest discover -s tests -v
+python -m iso12233.generate_chart --help
 ```
 
-Validation checks independent source/generated line and cubic control-point
-coordinates, paint styles, and all shape counts. It compares label-free
-geometry using the same renderer at 2048 and 8192 pixels and separately
-compares PDF layer vertices/control points after frame alignment. The JSON
-report includes per-component bounds, coordinate errors, raster statistics,
-and PDF differences. Overlay, amplified difference images and six detailed
-side-by-side crops are also produced. See [VALIDATION.md](VALIDATION.md).
+The 19 tests cover geometry, reflectance, frequency, tile independence and CLI
+outputs. Full source comparisons require local reference downloads. Modern
+production validation also requires the local NPY data corresponding to the
+published metadata; see [the validation instructions](docs/modern-charts.md#validation-and-limits).
 
 ## Sources and licenses
 
-- Chart artwork and derived measurement data: Stephen H. Westin / Cornell
-  University Program of Computer Graphics, copyright 2004. See
-  [author's page](https://www.graphics.cornell.edu/~westin/misc/res-chart.html).
-  No blanket open-source license for this artwork has been established.
-  Reconstructing it does not make it CC0; the MIT license below grants no
-  additional rights to the chart artwork or derived measurement data.
-- Python source files: MIT, see LICENSE. This grant does **not** cover the
-  measured artwork, generated chart images, or the original reference files.
-- Liberation Sans Regular 2.1.5: SIL Open Font License 1.1; copyright and
-  license retained in `fonts/LICENSE`, with authors in `fonts/AUTHORS`.
+Python code is MIT; this does not grant rights to the referenced artwork,
+measured chart data or generated images. The classic artwork is based on
+Stephen H. Westin / Cornell (2004). Modern references and changes are recorded
+in [NOTICE](NOTICE) and the [source inventory](data/modern_references.json).
+Liberation Sans is bundled under SIL OFL 1.1; see [its license](assets/fonts/LICENSE).
 
-No RAW images or sensor simulation results are included here. Existing
-ISO12233_Simulation data and code were not changed by this project.
+See [LICENSE](LICENSE) and [NOTICE](NOTICE) before redistributing chart artwork.

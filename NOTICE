@@ -26,3 +26,15 @@ Full ISO12233:2024 geometry and conformance have not been verified.
 MIT covers our Python code only; it grants no additional rights to referenced
 or derived chart artwork, chart profiles, generated images or data. The original
 reference documents remain local and are not distributed with this repository.
+
+Slanted-edge SFR: iso12233/sfrmat5.py is a NumPy port of sfrmat5 (MATLAB),
+Copyright (c) 2015, Peter D. Burns, distributed under the BSD license reproduced
+in that file's header. http://burnsdigitalimaging.com/software/sfrmat/
+iso12233/sfr.py, sfr_report.py and sfr_appearance.py are MIT, like the rest of
+the Python source.
+
+Photo: assets/photos/quebec-fire-escape.png is a 640x420 crop of "Stone building
+facade with small windows in Quebec City" by Wilfredor, CC0 1.0, Wikimedia
+Commons: https://commons.wikimedia.org/wiki/File:Stone_building_facade_with_small_windows_in_Quebec_City.jpg
+Metadata removed; no other changes. Derived images in reports/sfr-appearance/
+apply the listed blur and sharpening filters to that crop.

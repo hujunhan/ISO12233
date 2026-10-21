@@ -87,6 +87,22 @@ ISO12233/
 `charts/` holds the distributable examples; `output/` is the local workspace.
 Earlier experiments have been moved into `output/archive/`.
 
+## Measure sharpness (slanted-edge SFR)
+
+`iso12233.sfr` measures MTF from a slanted edge with a NumPy port of sfrmat5,
+and adds 10–90% rise, overshoot, MTF50 and MTF50P. It is validated against
+closed-form Gaussian and unsharp-mask edges. `iso12233.sfr_appearance` shows
+how sharpening and blur change both the MTF curve and a real photo.
+
+```bash
+pip install -r requirements-sfr.txt
+python -m iso12233.sfr_report roi.npy --title "My lens" --output report.png
+```
+
+![Edge profile and MTF for the reference and unsharp-mask radius 2](reports/sfr-appearance/report_usm-r2.png)
+
+Method, metric definitions, validation and the appearance study: [docs/sfr.md](docs/sfr.md).
+
 ## Details and verification
 
 - [Classic chart geometry, wedges and sweeps](docs/iso2000-chart.md)
@@ -94,6 +110,7 @@ Earlier experiments have been moved into `output/archive/`.
 - [Classic source validation](docs/iso2000-validation.md) · [Report](reports/iso2000/geometry.json)
 - [Modern sampling and reference comparison report](reports/modern/validation.json)
 - [Modern parameter profiles](data/modern_profiles.json) · [Public source inventory](data/modern_references.json)
+- [Slanted-edge SFR: method and validation](docs/sfr.md) · [Appearance study](reports/sfr-appearance/summary.json)
 - [Original reference downloads](references/README.md)
 
 ```bash
@@ -101,8 +118,8 @@ python -m unittest discover -s tests -v
 python -m iso12233.generate_chart --help
 ```
 
-The 19 tests cover geometry, reflectance, frequency, tile independence and CLI
-outputs. Full source comparisons require local reference downloads. Modern
+The 28 tests cover geometry, reflectance, frequency, tile independence, CLI
+outputs and slanted-edge SFR against closed-form edges. Full source comparisons require local reference downloads. Modern
 production validation also requires the local NPY data corresponding to the
 published metadata; see [the validation instructions](docs/modern-charts.md#validation-and-limits).
 
@@ -113,5 +130,7 @@ measured chart data or generated images. The classic artwork is based on
 Stephen H. Westin / Cornell (2004). Modern references and changes are recorded
 in [NOTICE](NOTICE) and the [source inventory](data/modern_references.json).
 Liberation Sans is bundled under SIL OFL 1.1; see [its license](assets/fonts/LICENSE).
+`iso12233/sfrmat5.py` is a port of sfrmat5 by Peter D. Burns and keeps its BSD
+license. The demo photo is CC0 (Wilfredor, Wikimedia Commons).
 
 See [LICENSE](LICENSE) and [NOTICE](NOTICE) before redistributing chart artwork.

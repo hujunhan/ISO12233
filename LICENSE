@@ -1,6 +1,8 @@
 The following MIT license applies only to the Python source files in this
-repository. Artwork, measured geometry, images, references and bundled fonts
-are excluded; see NOTICE and assets/fonts/LICENSE.
+repository, except iso12233/sfrmat5.py, which is a port of sfrmat5 under its
+original BSD license (see the file header and NOTICE). Artwork, measured
+geometry, images, references and bundled fonts are excluded; see NOTICE and
+assets/fonts/LICENSE.
 
 MIT License
 

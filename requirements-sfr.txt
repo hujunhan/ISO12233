@@ -1,0 +1,2 @@
+# Optional: plots for iso12233.sfr_report / sfr_appearance
+matplotlib==3.10.3

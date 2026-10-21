@@ -1,0 +1,140 @@
+{
+  "optics_sigma_px": 0.5,
+  "roi_px": [
+    72,
+    79
+  ],
+  "conditions": [
+    {
+      "id": "reference",
+      "label": "Reference",
+      "ops": [],
+      "rise_10_90_px": 1.5048,
+      "overshoot_pct": 0.0,
+      "undershoot_pct": 0.0,
+      "mtf50_cpp": 0.3216,
+      "mtf50p_cpp": 0.3216,
+      "mtf_at": {
+        "0.125": 0.9019,
+        "0.25": 0.6591,
+        "0.5": 0.1831
+      },
+      "edge_angle_deg": 5.0
+    },
+    {
+      "id": "usm-r1",
+      "label": "Unsharp mask, radius 1",
+      "ops": [
+        [
+          "usm",
+          1.0,
+          1.0
+        ]
+      ],
+      "rise_10_90_px": 0.9204,
+      "overshoot_pct": 15.19,
+      "undershoot_pct": 7.0,
+      "mtf50_cpp": 0.4548,
+      "mtf50p_cpp": 0.4254,
+      "mtf_at": {
+        "0.125": 1.1365,
+        "0.25": 1.1165,
+        "0.5": 0.378
+      },
+      "edge_angle_deg": 5.29
+    },
+    {
+      "id": "usm-r2",
+      "label": "Unsharp mask, radius 2",
+      "ops": [
+        [
+          "usm",
+          2.0,
+          1.0
+        ]
+      ],
+      "rise_10_90_px": 0.7532,
+      "overshoot_pct": 35.56,
+      "undershoot_pct": 13.38,
+      "mtf50_cpp": 0.4718,
+      "mtf50p_cpp": 0.3846,
+      "mtf_at": {
+        "0.125": 1.5335,
+        "0.25": 1.3267,
+        "0.5": 0.4249
+      },
+      "edge_angle_deg": 5.97
+    },
+    {
+      "id": "blur-r1",
+      "label": "Gaussian blur, radius 1",
+      "ops": [
+        [
+          "blur",
+          1.0,
+          0
+        ]
+      ],
+      "rise_10_90_px": 2.9293,
+      "overshoot_pct": 0.0,
+      "undershoot_pct": 0.0,
+      "mtf50_cpp": 0.166,
+      "mtf50p_cpp": 0.166,
+      "mtf_at": {
+        "0.125": 0.6738,
+        "0.25": 0.2129,
+        "0.5": 0.005
+      },
+      "edge_angle_deg": 4.71
+    },
+    {
+      "id": "blur-r2",
+      "label": "Gaussian blur, radius 2",
+      "ops": [
+        [
+          "blur",
+          2.0,
+          0
+        ]
+      ],
+      "rise_10_90_px": 5.2238,
+      "overshoot_pct": 0.0,
+      "undershoot_pct": 0.0,
+      "mtf50_cpp": 0.093,
+      "mtf50p_cpp": 0.093,
+      "mtf_at": {
+        "0.125": 0.2898,
+        "0.25": 0.0129,
+        "0.5": 0.0
+      },
+      "edge_angle_deg": 4.01
+    },
+    {
+      "id": "blur-r2-usm-r2",
+      "label": "Blur radius 2, then unsharp mask radius 2",
+      "ops": [
+        [
+          "blur",
+          2.0,
+          0
+        ],
+        [
+          "usm",
+          2.0,
+          1.0
+        ]
+      ],
+      "rise_10_90_px": 3.7845,
+      "overshoot_pct": 4.12,
+      "undershoot_pct": 1.8,
+      "mtf50_cpp": 0.1228,
+      "mtf50p_cpp": 0.1228,
+      "mtf_at": {
+        "0.125": 0.4827,
+        "0.25": 0.0316,
+        "0.5": 0.0
+      },
+      "edge_angle_deg": 4.71
+    }
+  ]
+}
